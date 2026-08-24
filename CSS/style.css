@@ -1,1 +1,64 @@
-/* not empty
+/* global variables for colors */
+/* colors: primary - pri, secondary - sec */
+
+:root {
+  --pri-midnight-green: #014e56;
+  --pri-light-coral: #f67e7e;
+  --pri-white: #ffffff;
+  --sec-rapture-blue: #d7d7d7;
+  --sec-police-blue: #2c6269;
+  --sec-deep-jungle-green: #004047;
+  --sec-sacramento-state-green: #012f34;
+  --sec-dark-green: #002529;
+}
+
+/*base font with fallbacks*/
+#container {
+  font-family: "Livvic", arial, sans-serif;
+}
+
+/* headings styles*/
+
+.h1-large {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.h1-small {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 56px;
+}
+
+.h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* text styles*/
+
+.body-1 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.body-2 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
