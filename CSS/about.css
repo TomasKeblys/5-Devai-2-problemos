@@ -8,10 +8,13 @@
 }
 
 header {
-    display: flex;
-    padding: 150px 165px 0px 165px;
     background-color: var(--sec-police-blue);
     height: 517px;
+}
+
+.about {
+    display: flex;
+    padding: 150px 165px 0px 165px;
     justify-items: center;
     align-items: center;
     gap: 6rem;
@@ -40,7 +43,7 @@ header {
 
 .a_decor1 {
     position: absolute;
-    left: 1340px;
+    left: 1200px;
     top: 317px;
 }
 
