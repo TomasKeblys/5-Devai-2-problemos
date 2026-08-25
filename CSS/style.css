@@ -75,7 +75,6 @@
 /*navbar*/
 header {
   align-content: center;
-  
 }
 
 nav {
@@ -129,3 +128,18 @@ nav ul ul {
 nav ul ul li {
   width: 3.125rem;
 }
+
+/*footer*/
+footer {
+  color: white;
+  width: 69.375rem;
+  position: relative;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+  & address,p {
+    opacity: 0.6;
+  }
+}
+
