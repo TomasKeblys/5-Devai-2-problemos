@@ -43,3 +43,30 @@ header {
     left: 1340px;
     top: 317px;
 }
+
+/*================================Director Section============================*/
+
+.directors {
+    background-color: var(--pri-midnight-green);
+    padding: 140px 165px
+}
+
+.directors img {
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--pri-white);
+}
+
+.directors h1 {
+    justify-self: center;
+}
+
+.directors .d_grid{
+    
+}
+
+.d_grid div{
+    background-color: var(--sec-sacramento-state-green);
+    height: 253px;
+    width: 350px;
+}
