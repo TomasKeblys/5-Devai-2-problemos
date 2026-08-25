@@ -12,9 +12,18 @@
   --sec-dark-green: #002529;
 }
 
+/* make border width count as a part of element etc. */
+
+* {
+  box-sizing: border-box;
+}
+
 /*base font with fallbacks*/
 #container {
   font-family: "Livvic", arial, sans-serif;
+  background-color: var(--pri-midnight-green);
+  width: 1440px;
+  margin: 0px auto;
 }
 
 /* headings styles*/
@@ -61,4 +70,62 @@
   font-style: normal;
   font-size: 15px;
   line-height: 25px;
+}
+
+/*navbar*/
+header {
+  align-content: center;
+  
+}
+
+nav {
+  color: white;
+  width: 69.375rem;
+  position: relative;
+  top: 4.563rem;
+  left: 10.313rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0rem;
+  padding-inline: 0rem;
+  padding-left: 0rem;
+}
+
+nav ul {
+  width: 23.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0rem;
+  margin-right: 0rem;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+nav button {
+  width: 9.563rem;
+  height: 3rem;
+  border: 2px solid white;
+  background-color: var(--pri-midnight-green);
+  border-radius: 50px;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+nav ul ul {
+  width: 8.75rem;
+}
+
+nav ul ul li {
+  width: 3.125rem;
 }
