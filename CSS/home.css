@@ -1,0 +1,135 @@
+:root {
+  --pri-midnight-green: #014e56;
+  --pri-light-coral: #f67e7e;
+  --pri-white: #ffffff;
+  --sec-rapture-blue: #d7d7d7;
+  --sec-police-blue: #2c6269;
+  --sec-deep-jungle-green: #004047;
+  --sec-sacramento-state-green: #012f34;
+  --sec-dark-green: #002529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  font-family: "Livvic", arial, sans-serif;
+  max-width: 1440px;
+  min-height: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.h1-large {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.h1-small {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 56px;
+}
+
+.h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+.body-1 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.body-2 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.features-section {
+  background-color: var(--sec-sacramento-state-green);
+  padding: 140px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  
+}
+
+.features-title {
+    width: 1110px;
+height: 404px;
+  width: 445px;
+  color: var(--pri-white);
+  border-top: 4px solid var(--pri-light-coral);
+  padding-top: 50px;
+}
+
+.title-line{
+    display: block;
+    width: 50px;
+    height: 4px;
+    border-color: var(--pri-light-coral);
+    margin-bottom: 50px;
+}
+
+.features-title::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  lef: 0;
+  width: 50px;
+  height: 4px;
+  border-color: var(--pri-light-coral);
+}
+
+.features-list {
+  width: 540px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.features-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.features-item img {
+    width: 72px;
+    height: 72px;
+}
+
+.features-item h3 {
+    color: var(--pri-light-coral);
+    margin-bottom: 16px;
+}
+
+.features-item p{
+    color: var(--pri-white);
+    opacity: 0.8;
+}
