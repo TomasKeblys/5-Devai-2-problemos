@@ -17,8 +17,8 @@
 
 #container {
   font-family: "Livvic", arial, sans-serif;
-  max-width: 1440px;
-  min-height: 700px;
+  max-width: 90rem;
+  min-height: 43.75rem;
   margin: 0 auto;
   width: 100%;
 }
@@ -26,92 +26,124 @@
 .h1-large {
   font-weight: 700;
   font-style: normal;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
 }
 
 .h1-small {
   font-weight: 700;
   font-style: normal;
-  font-size: 64px;
-  line-height: 56px;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
 
 .h2 {
   font-weight: 700;
   font-style: normal;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .h3 {
   font-weight: 700;
   font-style: normal;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .body-1 {
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .body-2 {
   font-weight: 600;
   font-style: normal;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
 }
 
 .features-section {
-  background-color: var(--sec-sacramento-state-green);
-  padding: 140px 165px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-image: url(../assets/bg-pattern-home-3.svg);
+  padding: 8.75rem 10.313rem;
+  background-color: var(--sec-sacramento-state-green);
+  background-image: url(../assets/bg-pattern-home-3.svg);
   background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
+  background-position: right -6.25rem bottom 0;
+  gap: 7.8125rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 69.375rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features-line {
+  margin-bottom: 3.375rem;
+}
+
+.title-line {
+  display: block;
+  width: 3.125rem;
+  height: 0.25rem;
+  background-color: var(--pri-light-coral);
+}
+
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 7.8125rem;
 }
 
 .features-title {
-  width: 445px;
-  height: 202px;
+  max-width: 27.8125rem;
+  margin: 0;
   color: var(--pri-white);
-  padding-left: 164px;
 }
 
-.feature-list {
-  width: 540px;
-  height: 346px;
+.features-list {
+  width: 33.75rem;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .features-item {
-  padding-left: 125px;
-  padding-right: 166px;
   display: flex;
   align-items: flex-start;
-  gap: 23px;
+  gap: 1.4375rem;
 }
 
 .features-item img {
-  width: 72px;
-  height: 72px;
+  width: 4.5rem;
+  height: 4.5rem;
   flex-shrink: 0;
+}
+
+.features-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .features-item h3 {
   color: var(--pri-light-coral);
-  margin-bottom: 16px;
+  margin: 0;
 }
 
 .features-item p {
   color: var(--pri-white);
   opacity: 0.8;
+  margin: 0;
 }
