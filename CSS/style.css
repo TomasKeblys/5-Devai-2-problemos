@@ -75,7 +75,6 @@
 /*navbar*/
 header {
   align-content: center;
-  
 }
 
 nav {
@@ -128,4 +127,92 @@ nav ul ul {
 
 nav ul ul li {
   width: 3.125rem;
+}
+
+/*footer*/
+#footer {
+  align-content: center;
+  width: 1440px;
+  height: 196px;
+  background-color: var(--sec-dark-green);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10.313rem;
+  padding-right: 10.313rem;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+  & address,
+  p {
+    opacity: 0.6;
+  }
+}
+
+#footer div div ul li {
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+#footer div address ul {
+  list-style-type: none;
+}
+#footer div:first-child {
+  display: flex;
+}
+#footer div .logo {
+  height: 6.25rem;
+  width: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  & img {
+    width: 10rem;
+    height: 2.5rem;
+  }
+  & ul {
+    padding: 0rem;
+    margin: 0rem;
+    align-content: end;
+    width: 8.75rem;
+    height: 1.75rem;
+    & li:first-child {
+      margin-right: 2.5rem;
+    }
+  }
+}
+#footer div address {
+  height: 6.25rem;
+  margin: 0rem;
+  margin-left: 7.813rem;
+
+  & ul {
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
+#footer .social {
+  height: 6.25rem;
+  width: 15.938rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  & ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0rem;
+    margin: 0rem;
+    justify-content: end;
+    width: 6.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  & p {
+    margin: 0rem;
+    align-content: end;
+  }
 }
