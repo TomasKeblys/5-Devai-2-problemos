@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+/*base font with fallbacks*/
+#container {
+    position: relative;
+  font-family: "Livvic", arial, sans-serif;
+  background-color: var(--pri-midnight-green);
+  width: 1440px;
+  margin: 0px auto;
+  color: white;
+  & h2 {
+    color: var(--pri-light-coral);
+    font-size: 32px;
+  }
+}
+#container .second-circle {
+position: absolute;
+top: 35.25rem;
+left: 83.75rem;
+}
+
