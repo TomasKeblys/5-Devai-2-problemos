@@ -14,31 +14,39 @@ header {
 
 .about {
     display: flex;
-    padding: 150px 165px 0px 165px;
+    margin: 150px 172px 120px 158px;
+    width: 1110px;
+    height: 156px;
     justify-items: center;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .red_dash{
     border: 2px solid var(--pri-light-coral);
     width: 3.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .a_h1 {
-    flex-grow: 1;
-    align-self: baseline;
-    padding-top: 3.8rem;
+    flex-grow: 2;
+    align-self: flex-start;
+}
+
+.a_h1 .h1-small{
+    margin-top: 0px;
 }
 
 .a_p{
-    flex-grow: 2;
-    padding: 3rem;
+    width: 730px;
+    height: 156px;
+    flex-grow: 3;
+
 }
 
 .a_p p{
     text-align: start;
+    margin-right: 6rem;
 }
 
 .a_decor1 {
@@ -65,7 +73,7 @@ header {
 }
 
 .directors .d_grid{
-    
+    display: grid;
 }
 
 .d_grid div{
