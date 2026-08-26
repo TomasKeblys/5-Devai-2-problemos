@@ -216,3 +216,37 @@ nav ul ul li {
     align-content: end;
   }
 }
+
+/*ready to get started*/
+
+#ready-to-get-started {
+  position: relative;
+  color: var(--sec-sacramento-state-green);
+  background-color: var(--pri-light-coral);
+  height: 12.5rem;
+  align-content: center;
+  /* display: flex; */
+}
+#ready-to-get-started button {
+  width: 9.563rem;
+  height: 3rem;
+  border: 2px solid var(--sec-sacramento-state-green);
+  background-color: var(--pri-light-coral);
+  border-radius: 50px;
+  & a {
+    text-decoration: none;
+    color: var(--sec-sacramento-state-green);
+  }
+}
+#ready-to-get-started div {
+  justify-self: center;
+  padding-left: 0.188em;
+  width: 57.313rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ready-to-get-started img {
+  position: absolute;
+  top: 3.5rem;
+}
