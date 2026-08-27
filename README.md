@@ -15,7 +15,7 @@ After cloning the repository, either:
 * open index.html using any Web Browser.
 
 ## File structure
-
+```bash
 │   .gitignore
 │   index.html
 │   README.md
@@ -42,7 +42,7 @@ After cloning the repository, either:
 └───pages
         about.html
         contact.html
-
+```
 ## Workflow rules
 
 * Branch names: Task/K*-* . * - sprint and task number.
