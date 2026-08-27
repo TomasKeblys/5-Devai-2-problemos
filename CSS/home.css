@@ -65,26 +65,17 @@
   line-height: 1.563rem;
 }
 
-header {
+.header {
+   padding: 8.75rem 10.3125rem;
   background-color: var(--pri-midnight-green);
-  color: var(--pri-white);
+  background-image: url("../assets/bg-pattern-home-2.svg");
+  background-repeat: no-repeat;
+  background-position: right -6.25rem bottom 0;
 }
 
-/*navbar*/
-header {
-  align-content: center;
-}
-
-.wrapper {
-  max-width: 69.375rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header nav {
+.nav {
   display: flex;
-  align-items: center;
-  padding-top: 4.5rem;
+  justify-content: space-between;
 }
 
 .nav-container {
@@ -101,10 +92,9 @@ header nav {
   align-items: center;
 }
 
-nav-logo img {
+.nav-logo img {
   display: block;
   width: 10rem;
-  height: auto;
 }
 
 .nav-link-container {
@@ -116,20 +106,70 @@ nav-logo img {
   list-style: none;
 }
 
-.nav-link a:hover,
-.nav-page-link a:hover {
+.nav-link {
+  list-style: none;
+}
+
+.nav-link a {
+  color: var(--pri-white);
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: var(--pri-light-coral);
+}
+
+.btn {
+  width: 9.563rem;
+  height: 3rem;
+  border: 2px solid white;
+  background-color: var(--pri-midnight-green);
+  border-radius: 50px;
+  & a {
+    text-decoration: none;
+    color: white;
+}
+}
+.btn a {
+  color: var(--pri-white);
+  text-decoration: none;
+}
+
+.nav-section {
+  padding-top: 8rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.nav-section h1 {
+  width: 33rem;
+  margin: 0;
+  color: var(--pri-white);
+}
+
+.nav-section h1 span {
     color: var(--pri-light-coral);
 }
 
-.btn{
-    padding: 0.625rem 1.875rem;
-    border-radius: 2rem;
-    background-color: transparent;
+.nav-text hr {
+    width: 3.125rem;
+    margin: 0 0 5.188rem 0;
+    border: 0;
+    border-top: 0.25rem solid var(--pri-light-coral);
 }
 
-.btn a{
+.nav-text {
+    width: 27.8125rem;
+}
+
+.nav-text p {
+    margin: 0;
     color: var(--pri-white);
-    text-decoration: none;
 }
 
 /* features */
@@ -146,8 +186,6 @@ nav-logo img {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   width: 69.375rem;
   width: 100%;
   margin: 0 auto;
