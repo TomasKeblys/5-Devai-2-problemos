@@ -59,7 +59,8 @@ header {
 
 .directors {
     background-color: var(--pri-midnight-green);
-    margin: 8.75rem 10.312rem
+    margin: 8.75rem 10.312rem;
+    height: 45.125rem;
 }
 
 .directors img {
@@ -139,5 +140,83 @@ header {
 
 .d_grid2 .body-2 {
     margin: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 4.687rem;
     text-align: center;
+}
+
+.d_grid2 div{
+    background-color: var(--sec-dark-green);
+}
+
+.d_grid2 div a img{
+    width: 1.5rem;
+    height: 1.218rem;
+
+    border-color: transparent;
+    border-radius: 0%;
+
+    margin: 0rem;
+}
+
+.d_grid2 div a:nth-child(2) img{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 1rem;
+}
+
+.d_grid2 span{
+    margin: 0rem 9rem 3.968rem 9rem;
+}
+
+.d_grid2 button{
+    top: 2rem;
+    background-color: var(--sec-rapture-blue);
+}
+
+.d_grid2 button img{
+    margin: 1.187rem 0.875rem;
+
+    background-color: var(--sec-rapture-blue);
+    color: var(--sec-dark-green);
+
+    transform: rotate(45deg);
+
+    width: 1rem;
+    height: 1rem;
+
+    border-radius: 50%;
+    border: 0rem;
+}
+
+.d_grid2{       
+    position: relative;
+    bottom: 34.6rem;
+}
+
+
+
+
+
+.d_flip_nikita {
+    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+}
+
+.d_flip_cristian {
+    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+}
+
+.d_flip_cruz {
+    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+}
+
+.d_flip_drake {
+    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+}
+
+.d_flip_griffin {
+    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+}
+.d_flip_aden {
+    z-index: 1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
