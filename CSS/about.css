@@ -60,6 +60,7 @@ header {
 .directors {
     background-color: var(--sec-deep-jungle-green);
     padding: 8.75rem 10.312rem;
+    padding-top: 4.75rem;
     height: 62.625rem;
 }
 
@@ -130,6 +131,39 @@ header {
     height: 1rem;
     border-radius: 50%;
     border: 0rem;
+}
+
+.directors .d_decor1{
+    position: relative;
+
+    width: 12.5rem;
+    height: 12.5rem;
+    
+    bottom: 85.1rem;
+    right: 16.5rem;
+}
+
+.directors .d_decor1 img{
+    position: relative;
+    width: 12.5rem;
+    height: 12.5rem;
+
+    border-radius: 0%;
+
+    border-color: transparent;
+}
+
+.directors .d_decor2{
+    position: relative;
+
+    width: 9.187rem;
+    height: 6.25rem;
+
+    border: none;
+    border-radius: 0%;
+
+    bottom: 41.1rem;
+    left: 70.6rem;
 }
 
 /*==============flip directors================*/
@@ -260,6 +294,15 @@ header {
 }
 .clients img:nth-child(5){
     width: 6.125rem;
+}
+
+.clients .c_decor1{
+    position: relative;
+
+    height: 12.5rem;
+    width: 12.5rem;
+
+    bottom: 18.54rem;
 }
 
 /*=============ready get started tweaks================*/
