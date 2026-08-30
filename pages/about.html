@@ -16,13 +16,28 @@
   <title>Frontend Mentor | myteam website challenge - About</title>
 </head>
 
-  <body id="container" class="container">
-    <nav><!-- Nav bar space (K1-18)--></nav>
+<body id="container">
+
+  <header>
+            <nav>
+          <ul>
+            <li>
+              <img src="../assets/logo.svg" alt="logo" />
+            </li>
+            <ul>
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="../pages/about.html">about</a>
+              </li>
+            </ul>
+          </ul>
+          <button class="body-1"><a href="../pages/contact.html">contact us</a></button>
+        </nav>
 
 
-    <header>
-
-
+    <div class="about">
       <article class="a_h1">
         <h1 class="h1-small">About</h1>
       </article>
@@ -37,133 +52,141 @@
         </p>
       </article>
 
+
       <img src="../assets/bg-pattern-about-1-mobile-nav-1.svg" alt="red decor" class="a_decor1">
-    </header>
+    </div>
+  </header>
 
-    <section class="directors">
-      <h2>Meet the directors</h2>
-      <figure class="d_grid">
-
-        <div class="d_card_nikita">
-          <img src="../assets/avatar-nikita.jpg" alt="picture of Nikita Marks">
-          <p class="d_names">Nikita Marks</p>
-          <p class="d_job">Founder & CEO</p>
-          <button></button> <!-- button for flip card-->
-        </div>
-
-        <div class="d_card_cristian">
-          <img src="../assets/avatar-christian.jpg" alt="picture of Cristian Duncan">
-          <p class="d_names">Cristian Duncan</p>
-          <p class="d_job">Co-founder & COO</p>
-          <button></button> <!-- button for flip card-->
-        </div>
-
-        <div class="d_card_cruz">
-          <img src="../assets/avatar-cruz.jpg" alt="picture of Cruz Hamer">
-          <p class="d_names">Cruz Hamer</p>
-          <p class="d_job">Co-founder & CTO</p>
-          <button></button> <!-- button for flip card-->
-        </div>
-
-        <div class="d_card_drake">
-          <img src="../assets/avatar-drake.jpg" alt="picture of Drake Heaton">
-          <p class="d_names">Drake Heaton</p>
-          <p class="d_job">Business Development Lead</p>
-          <button></button> <!-- button for flip card-->
-        </div>
-
-        <div class="d_card_griffin">
-          <img src="../assets/avatar-griffin.jpg" alt="picture of Griffin Wise">
-          <p class="d_names">Griffin Wise</p>
-          <p class="d_job">Lead Marketing</p>
-          <button></button> <!-- button for flip card-->
-        </div>
-
-        <div class="d_card_aden">
-          <img src="../assets/avatar-aden.jpg" alt="picture of Aden Allan">
-          <p class="d_names">Aden Allan</p>
-          <p class="d_job">Head of Talent</p>
-          <button></button> <!-- button for flip card-->
-        </div>
+  
 
 
-        <div class="d_flip_nikita">
-          <p class="d_names">Nikita Marks</p>
-          <p>“It always amazes me how much talent there is in every corner of the globe.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+  <section class="directors">
+    <h1 class="h1-small">Meet the directors</h1>
+    <figure class="d_grid">
 
-        <div class="d_flip_cristian">
-          <p class="d_names">Cristian Duncan</p>
-          <p>“Distributed teams required unique processes. You need to approach work in a new way.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+      <div class="d_card_nikita">
+        <img src="../assets/avatar-nikita.jpg" alt="picture of Nikita Marks">
+        <p class="d_names body-1">Nikita Marks</p>
+        <p class="d_job">Founder & CEO</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
 
-        <div class="d_flip_cruz">
-          <p class="d_names">Cruz Hamer</p>
-          <p>“Technology is at the forefront of enabling distributed teams. That's where we come in.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+      <div class="d_card_cristian">
+        <img src="../assets/avatar-christian.jpg" alt="picture of Cristian Duncan">
+        <p class="d_names body-1">Cristian Duncan</p>
+        <p class="d_job">Co-founder & COO</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
 
-        <div class="d_flip_drake">
-          <p class="d_names">Drake Heaton</p>
-          <p>“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+      <div class="d_card_cruz">
+        <img src="../assets/avatar-cruz.jpg" alt="picture of Cruz Hamer">
+        <p class="d_names body-1">Cruz Hamer</p>
+        <p class="d_job">Co-founder & CTO</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
 
-        <div class="d_flip_griffin">
-          <p class="d_names">Griffin Wise</p>
-          <p>“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+      <div class="d_card_drake">
+        <img src="../assets/avatar-drake.jpg" alt="picture of Drake Heaton">
+        <p class="d_names body-1">Drake Heaton</p>
+        <p class="d_job">Business Development Lead</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
 
-        <div class="d_flip_aden">
-          <p class="d_names">Aden Alan</p>
-          <p>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
-          <span>
-            <a href=""></a>
-            <a href=""></a>
-          </span>
-          <button></button> <!-- button to come back to card-->
-        </div>
+      <div class="d_card_griffin">
+        <img src="../assets/avatar-griffin.jpg" alt="picture of Griffin Wise">
+        <p class="d_names body-1">Griffin Wise</p>
+        <p class="d_job">Lead Marketing</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
 
+      <div class="d_card_aden">
+        <img src="../assets/avatar-aden.jpg" alt="picture of Aden Allan">
+        <p class="d_names body-1">Aden Allan</p>
+        <p class="d_job">Head of Talent</p>
+        <button><img src="../assets/icon-cross.svg" alt=""></button> <!-- button for flip card-->
+      </div>
       </figure>
-    </section>
 
-    <section class="clients">
-      <h2>Some of our clients</h2>
-      <figure>
-        <img src="../assets/logo-the-verge.png" alt="The verge icon">
-        <img src="../assets/logo-jakarta-post.png" alt="The jakarta post logo">
-        <img src="../assets/logo-the-guardian.png" alt="the guardian logo">
-        <img src="../assets/logo-tech-radar.png" alt="tech radar logo">
-        <img src="../assets/logo-gadgets-now.png" alt="gadgets now logo">
-      </figure>
-    </section>
 
-    <figure></figure> <!--Global ready get started (K1-21)-->
+      <figure class="d_grid2 d_grid">
 
-    <footer></footer> <!-- global footer (K1-20)-->
-  </body>
+      <div class="d_flip_nikita">
+        <p class="d_names body-1">Nikita Marks</p>
+        <p class="body-2">“It always amazes me how much talent there is in every corner of the globe.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+      <div class="d_flip_cristian">
+        <p class="d_names body-1">Cristian Duncan</p>
+        <p class="body-2">“Distributed teams required unique processes. You need to approach work in a new way.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+      <div class="d_flip_cruz">
+        <p class="d_names body-1">Cruz Hamer</p>
+        <p class="body-2">“Technology is at the forefront of enabling distributed teams. That's where we come in.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+      <div class="d_flip_drake">
+        <p class="d_names body-1">Drake Heaton</p>
+        <p class="body-2">“Hiring similar people from similar backgrounds is a surefire way to stunt innovation.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+      <div class="d_flip_griffin">
+        <p class="d_names body-1">Griffin Wise</p>
+        <p class="body-2">“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+      <div class="d_flip_aden">
+        <p class="d_names body-1">Aden Alan</p>
+        <p class="body-2">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+        <span>
+          <a href=""><img src="../assets/icon-twitter.svg" alt="twitter logo"></a>
+          <a href=""><img src="../assets/icon-linkedin.svg" alt="linkedin logo"></a>
+        </span>
+        <button><img src="../assets/icon-cross.svg" alt="x to close"></button> <!-- button to come back to card-->
+      </div>
+
+    </figure>
+  </section>
+
+  <section class="clients">
+    <h2>Some of our clients</h2>
+    <figure>
+      <img src="../assets/logo-the-verge.png" alt="The verge icon">
+      <img src="../assets/logo-jakarta-post.png" alt="The jakarta post logo">
+      <img src="../assets/logo-the-guardian.png" alt="the guardian logo">
+      <img src="../assets/logo-tech-radar.png" alt="tech radar logo">
+      <img src="../assets/logo-gadgets-now.png" alt="gadgets now logo">
+    </figure>
+  </section>
+
+  <figure></figure> <!--Global ready get started (K1-21)-->
+
+  <footer></footer> <!-- global footer (K1-20)-->
+</body>
 
 </html>
