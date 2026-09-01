@@ -131,51 +131,6 @@ nav ul ul li {
   width: 3.125rem;
 }
 
-/* navbar tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  nav {
-    width: 43.0625rem;
-    height: 3rem;
-    top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  nav ul {
-    width: 20.75rem;
-    height: 3rem;
-    margin: 0rem;
-  }
-
-  nav ul>li:first-child img {
-    width: 8rem;
-    height: 2.375rem;
-    display: block;
-  }
-
-  nav ul ul {
-    width: 8.75rem;
-    height: 1.75rem;
-  }
-
-  nav ul ul li {
-    height: 1.75rem;
-  }
-
-  nav ul ul li a {
-    line-height: 1.75rem;
-  }
-
-  nav button {
-    width: 9.5625rem;
-    height: 3rem;
-  }
-
-  nav button a {
-    line-height: 1.75rem;
-  }
-}
-
 /*footer*/
 #footer {
   align-content: center;
@@ -311,4 +266,49 @@ nav ul ul li {
 #ready-to-get-started img {
   position: absolute;
   top: 3.5rem;
+}
+
+/* navbar tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    width: 43.0625rem;
+    height: 3rem;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav ul {
+    width: 20.75rem;
+    height: 3rem;
+    margin: 0rem;
+  }
+
+  nav ul>li:first-child img {
+    width: 8rem;
+    height: 2.375rem;
+    display: block;
+  }
+
+  nav ul ul {
+    width: 8.75rem;
+    height: 1.75rem;
+  }
+
+  nav ul ul li {
+    height: 1.75rem;
+  }
+
+  nav ul ul li a {
+    line-height: 1.75rem;
+  }
+
+  nav button {
+    width: 9.5625rem;
+    height: 3rem;
+  }
+
+  nav button a {
+    line-height: 1.75rem;
+  }
 }
