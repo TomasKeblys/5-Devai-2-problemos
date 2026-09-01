@@ -5,7 +5,7 @@
   --pri-midnight-green: #014e56;
   --pri-light-coral: #f67e7e;
   --pri-white: #ffffff;
-  --sec-rapture-blue: #79C8C7;
+  --sec-rapture-blue: #79c8c7;
   --sec-police-blue: #2c6269;
   --sec-deep-jungle-green: #004047;
   --sec-sacramento-state-green: #012f34;
@@ -26,7 +26,7 @@
   margin: 0px auto;
 }
 
-/* headings styles*/
+/*-------------------- headings styles--------------------*/
 
 .h1-large {
   font-weight: 700;
@@ -56,7 +56,7 @@
   line-height: 28px;
 }
 
-/* text styles*/
+/*-------------------- text styles--------------------*/
 
 .body-1 {
   font-weight: 600;
@@ -72,7 +72,7 @@
   line-height: 25px;
 }
 
-/*navbar*/
+/*--------------------navbar--------------------*/
 header {
   align-content: center;
 }
@@ -129,7 +129,7 @@ nav ul ul li {
   width: 3.125rem;
 }
 
-/*footer*/
+/*--------------------footer--------------------*/
 #footer {
   align-content: center;
   width: 1440px;
@@ -217,7 +217,7 @@ nav ul ul li {
   }
 }
 
-/*ready to get started*/
+/*--------------------ready to get started--------------------*/
 
 #ready-to-get-started {
   position: relative;
@@ -251,4 +251,34 @@ nav ul ul li {
   top: 3.5rem;
 }
 
+/*-----------------media-tablets--------------------*/
+/*--------------------------------------------------*/
 
+/*--------------------footer --------------------*/
+@media (max-width: 1439px) {
+  #footer {
+    max-width: 1439px;
+    min-width: 768px;
+    width: auto;
+    padding-left: 2.438rem;
+    padding-right: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+    height: 16.938rem;
+    display: block;
+  }
+  #footer div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer .social {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+  }
+  #footer div address ul {
+    text-align: right;
+    list-style-position: inside;
+  }
+}
