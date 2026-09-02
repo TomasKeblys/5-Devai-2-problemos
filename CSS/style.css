@@ -5,7 +5,7 @@
   --pri-midnight-green: #014e56;
   --pri-light-coral: #f67e7e;
   --pri-white: #ffffff;
-  --sec-rapture-blue: #79C8C7;
+  --sec-rapture-blue: #79c8c7;
   --sec-police-blue: #2c6269;
   --sec-deep-jungle-green: #004047;
   --sec-sacramento-state-green: #012f34;
@@ -253,4 +253,30 @@ nav ul ul li {
   top: 3.5rem;
 }
 
-
+/*-------------------ready to get started-------------------*/
+@media (max-width: 1439px) {
+  #ready-to-get-started {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+  }
+  #ready-to-get-started img {
+    top: 4.875rem;
+  }
+  #ready-to-get-started h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0rem;
+    align-content: center;
+  }
+  #ready-to-get-started div {
+    /* display: flex; */
+    justify-self: auto;
+    width: 35.813rem;
+    /* min-width: 35.813rem; */
+    /* justify-self: auto; */
+    /* justify-content: center; */
+    margin-left: 6.063rem;
+    margin-right: 6.125rem;
+  }
+}
