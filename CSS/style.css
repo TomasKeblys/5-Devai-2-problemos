@@ -270,7 +270,7 @@ nav ul ul li {
 
 /* navbar tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
-  nav {
+  .nav.wrapper {
     width: 43.0625rem;
     height: 3rem;
     top: 4rem;
