@@ -110,6 +110,7 @@ nav ul li {
 }
 
 nav button {
+  font-family: "Livvic", arial, sans-serif;
   width: 9.563rem;
   height: 3rem;
   border: 2px solid white;
