@@ -210,13 +210,13 @@ nav {
 }
 
 /* testimonials-section */
-
+/* Atsilepimai */
 .testimonials-section {
-    width: 100%;
-    max-width: 90rem;
-    min-height: 46.5625rem;
-    box-sizing: border-box;
-    padding: 8.75rem 0 6.25rem 0;
+  width: 100%;
+  max-width: 90rem;
+  min-height: 46.5625rem;
+  box-sizing: border-box;
+  padding: 8.75rem 0 6.25rem 0;
   background-color: var(--sec-deep-jungle-green);
   background-image:
     url(../assets/bg-pattern-home-4-about-3.svg),
@@ -231,7 +231,6 @@ nav {
 .testimonials-title {
   max-width: 58.25rem;
   margin: 0 auto 3.5rem auto;
-  /* margin-bottom: 5.75rem; */
   color: var(--pri-white);
   text-align: center;
 }
@@ -246,6 +245,7 @@ nav {
   align-items: flex-start;
   gap: 1.875rem;
   padding-top: 2.25rem;
+  margin: 0 auto;
 }
 
 .testimonial-card {
@@ -254,8 +254,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   margin: 0;
-  margin-bottom: 0.8125rem;
   color: var(--pri-white);
 }
 
@@ -273,6 +273,7 @@ nav {
   position: relative;
   z-index: 2;
   margin: 0 0 1.5rem 0;
+  flex-grow: 1;
 }
 
 .testimonial-card blockquote p {
@@ -283,6 +284,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .testimonial-card h3 {
@@ -292,7 +294,7 @@ nav {
 
 .testimonial-card small {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.813rem;
   font-weight: 500;
   font-style: italic;
   opacity: 0.8;
@@ -307,3 +309,9 @@ nav {
   border: 0.125rem solid #c4fffe;
   margin: 0;
 }
+
+.avatar-arthur {
+  margin-top: 0.8125rem;
+}
+
+
