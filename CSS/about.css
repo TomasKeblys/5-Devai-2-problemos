@@ -232,27 +232,27 @@ header {
 
 
 
-.d_flip_nikita {
-    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_nikita {
+    z-index: -100;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
 
-.d_flip_cristian {
-    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_cristian {
+    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
 
-.d_flip_cruz {
-    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_cruz {
+    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
 
-.d_flip_drake {
-    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_drake {
+    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
 
-.d_flip_griffin {
-    z-index: -1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_griffin {
+    z-index: -10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
-.d_flip_aden {
-    z-index: 1;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.d_card_aden {
+    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
 }
 
 /*===========================OUR CLIENTS=============================*/
@@ -309,4 +309,41 @@ header {
 
 #ready-to-get-started button {
     align-self: center;
+}
+
+
+
+/*====================Active===========================*/
+
+/*====================Active director===========================*/
+
+.d_grid button{
+    z-index: 1;
+}
+
+.d_grid button:hover{
+    background-color: var(--sec-rapture-blue);
+    transition-duration: 0.3s;
+    & *{    background-color: var(--sec-rapture-blue);  
+        transition-duration: 0.3s;
+    } 
+}
+
+.d_grid2 button:hover{
+    background-color: var(--pri-light-coral);
+    transition-duration: 0.3s;
+    & *{    background-color: var(--pri-light-coral);  
+    transition-duration: 0.3s;
+    } 
+}
+
+
+
+.d_grid2 a img:hover{
+    filter: brightness(0) saturate(100%) invert(69%) sepia(91%) saturate(1164%) hue-rotate(306deg) brightness(95%) contrast(102%);
+}
+
+
+d_grid{
+    position: relative;
 }
