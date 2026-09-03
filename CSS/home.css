@@ -26,20 +26,20 @@
   padding-top: 4.563rem;
   padding-bottom: 15.625rem;
   background-color: var(--pri-midnight-green);
-  background-image: 
-  url("../assets/bg-pattern-home-1.svg"),
-  url("../assets/bg-pattern-home-2.svg");
+  background-image:
+    url("../assets/bg-pattern-home-1.svg"),
+    url("../assets/bg-pattern-home-2.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 
-  left -6.25rem top 15.625rem,
-  right 10.313rem bottom 0;
+  background-position:
+    left -6.25rem top 15.625rem,
+    right 10.313rem bottom 0;
 }
 
 /* header navigation */
 
 nav {
-    left: 0rem;
-    top: 0rem;
+  left: 0rem;
+  top: 0rem;
 }
 
 .nav {
@@ -122,7 +122,7 @@ nav {
   width: 3.125rem;
   margin: 0;
   border: 0;
-  border-top: 0.25rem solid #79C8C7;
+  border-top: 0.25rem solid #79c8c7;
 }
 
 .nav-text p {
@@ -207,4 +207,102 @@ nav {
   color: var(--pri-white);
   opacity: 0.8;
   margin: 0;
+}
+ 
+/* Nuo 768px iki 1024px | HOME Tablet Header & Navbar */
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .body-1.header {
+    padding-top: 4rem;
+    padding-bottom: 0;
+    background-image: url("../assets/bg-pattern-home-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+  }
+
+  .nav.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.438rem;
+    padding-right: 2.5rem;
+  }
+
+  .nav-logo {
+    width: 8rem;
+    height: 2rem;
+    height: 3rem;
+  }
+
+  .nav-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-link-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  .nav-section.wrapper {
+    padding-top: 7rem;
+    padding-bottom: 16rem;
+    padding-left: 2.813rem;
+    padding-right: 2.5rem;
+    height: auto;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    max-width: 42.688rem;
+    height: 13.75rem;
+  }
+
+  .nav-section h1,
+  .h1-large {
+    width: 22rem;
+    height: auto;
+    max-width: 22rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .nav-text {
+    width: 100%;
+    max-width: 28.563rem;
+  }
+
+  .nav-text .body-1 {
+    max-width: 28.563rem;
+    margin: 0;
+    font-size: 0.938rem;
+    line-height: 1.75rem;
+  }
+
+  .nav-text hr {
+    display: none;
+  }
 }
