@@ -274,8 +274,8 @@ nav ul ul li {
     width: 43.0625rem;
     height: 3rem;
     top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
   }
 
   nav ul {
