@@ -270,49 +270,237 @@ nav ul ul li {
   top: 3.5rem;
 }
 
+/* Navbar mobile */
+
+/* Mobile elementai desktop režime paslėpti */
+.mobile-menu-toggle,
+.mobile-menu-open,
+.mobile-menu-close,
+.mobile-nav-overlay,
+.mobile-nav-menu {
+  display: none;
+}
+
 @media (max-width: 767px) {
+
+  #container {
+    width: 100%;
+    margin: 0;
+  }
 
   /* Mobile navbar */
   nav.nav {
-    width: 20.4375px;
+    width: 20.4375rem;
+    /* 327px */
     height: 2rem;
-    top: 3rem;
+    /* 32px */
+    top: 2rem;
     left: 0;
     margin: 0 auto;
     padding: 0;
   }
 
-  nav.nav .nav-conainer {
+  nav.nav .nav-container {
     width: auto;
     margin: 0;
     padding: 0;
   }
 
   /* Mobile logo */
-  .nav.nav .nav-logo,
+  nav.nav .nav-logo,
   nav.nav .nav-logo img {
     display: block;
     width: 8rem;
+    /* 128px */
     height: 2rem;
+    /* 32px */
   }
 
-  /* Hamburger menu button */
+  /* Desktop nuorodos mobile paslepiamos */
+  nav.nav .nav-link-container {
+    display: none;
+  }
+
+  /* Desktop contact us mygtukas mobile paslepiamas */
+  nav.nav>button {
+    display: none;
+  }
+
+  /* Mobile menu checkbox */
+  .mobile-menu-toggle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Hamburger menu mygtukas */
   .mobile-menu-open {
     position: absolute;
-    top: 0.4375px;
+    top: 0.4375rem;
     right: 0;
+    z-index: 10;
+
     display: flex;
     width: 1.25rem;
+    /* 20px */
     height: 1.0625rem;
+    /* 17px */
+
     flex-direction: column;
     justify-content: space-between;
+
     cursor: pointer;
   }
 
   .mobile-menu-open span {
     display: block;
     width: 1.25rem;
+    /* 20px */
     height: 0.1875rem;
+    /* 3px */
     background-color: var(--pri-white);
+  }
+
+  /* Patamsintas fonas už meniu */
+  .mobile-nav-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    display: block;
+
+    background-color: rgba(0, 37, 41, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  /* Atsidarantis mobile meniu */
+  .mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 101;
+
+    display: block;
+    width: 15.9375rem;
+    /* 255px */
+    height: 41.6875rem;
+    /* 667px */
+
+    background-color: var(--sec-police-blue);
+    overflow: hidden;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Close X mygtukas */
+  .mobile-menu-close {
+    position: absolute;
+    top: 3rem;
+    right: 1.625rem;
+
+    display: block;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    cursor: pointer;
+  }
+
+  .mobile-menu-close span {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+
+    width: 1.25rem;
+    height: 0.125rem;
+
+    background-color: var(--pri-white);
+  }
+
+  .mobile-menu-close span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .mobile-menu-close span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  /* Mobile navigacijos nuorodos */
+  nav.nav .mobile-nav-links {
+    display: flex;
+    width: auto;
+
+    margin: 7.5rem 0 0 3rem;
+    padding: 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    list-style: none;
+  }
+
+  nav.nav .mobile-nav-links li {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  nav.nav .mobile-nav-links a {
+    color: var(--pri-white);
+    text-decoration: none;
+    font-family: "Livvic", arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+  }
+
+  /* Mobile contact us mygtukas */
+  nav.nav .mobile-nav-links .mobile-contact {
+    display: flex;
+
+    width: 9.9375rem;
+    height: 3rem;
+
+    margin-top: 0.5rem;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0.125rem solid var(--pri-white);
+    border-radius: 3.125rem;
+  }
+
+  /* Dekoratyvinis paveikslėlis */
+  .mobile-nav-pattern {
+    position: absolute;
+    right: -6.25rem;
+    bottom: 0;
+
+    width: 12.5rem;
+  }
+
+  /* Atidaryto meniu būsena */
+  .mobile-menu-toggle:checked~.mobile-nav-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu-toggle:checked~.mobile-nav-menu {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-toggle:checked~.mobile-menu-open {
+    visibility: hidden;
   }
 }
