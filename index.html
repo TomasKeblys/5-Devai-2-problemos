@@ -36,12 +36,49 @@
                 <button class="body-1">
                     <a href="../pages/contact.html">contact us</a>
                 </button>
+
+                <!-- Navbar mobile: rodomas tik iki 767px -->
+
+                <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toogle" />
+
+                <!-- Hamburger meniu mygtukas -->
+
+                <label for="mobile-menu-toogle" class="mobile-menu-open" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Fonas po meniu atidarymo -->
+
+                <label for="mobile-menu-toggle" class="mobile-menu-overlay"></label>
+
+                <!-- Navbar mobile šoninis meniu -->
+
+                <div class="mobile-nav-menu">
+                    <!-- Meniu uždarymo mygtukas-->
+                    <label for="mobile-menu-toggle" class="mobile-menu-close" aria-label="Close navigation menu">
+                        <span></span>
+                        <span></span>
+                    </label>
+
+                    <!-- Mobile menu navigacijos nuorodos -->
+                    <ul class="mobile-nav-links">
+                        <li><a href="#">home</a></li>
+                        <li><a href="../pages/about.html">about</a></li>
+                        <li><a class="mobile-contact" href="../pages/contact.html">contact us</a></li>
+                    </ul>
+
+                    <img class="mobile-nav-patern" src="../assets/bg-patern-about-1-mobile-nav-1.svg" alt="" />
+                </div>
+
+                <!-- Navbar mobile pabaiga -->
             </nav>
             <section class="nav-section wrapper">
                 <div class="header-section">
                     <h1 class="h1-large">Find the best <span>talent</span></h1>
                     <div class="nav-text">
-                        <hr/>
+                        <hr />
                         <p class="body-1">
                             Finding the right people and building high performing teams can be
                             hard. Most companies aren’t tapping into the abundance of global
