@@ -357,9 +357,13 @@ nav ul ul li {
   /* Patamsintas fonas už meniu */
   .mobile-nav-overlay {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     display: block;
+    height: 41.6875rem;
+    /* 667px */
     background-color: rgba(0, 37, 41, 0.6);
     opacity: 0;
     visibility: hidden;
