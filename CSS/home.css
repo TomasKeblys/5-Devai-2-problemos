@@ -9,9 +9,10 @@
 #container {
   font-family: "Livvic", arial, sans-serif;
   max-width: 90rem;
-  min-height: 43.75rem;
+  min-height: 42.75rem;
   margin: 0 auto;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -144,22 +145,26 @@ nav {
   gap: 7.8125rem;
 }
 
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 7.8125rem;
+}
+
 .features-line {
-  margin-bottom: 3.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 27.8125rem;
 }
 
 .title-line {
   display: block;
   width: 3.125rem;
   height: 0.25rem;
+  margin-bottom: 3.375rem;
   background-color: var(--pri-light-coral);
-}
-
-.features-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 7.8125rem;
 }
 
 .features-title {
@@ -178,6 +183,7 @@ nav {
   gap: 2rem;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .features-item {
@@ -230,7 +236,6 @@ nav {
 
   .nav-logo {
     width: 8rem;
-    height: 2rem;
     height: 3rem;
   }
 
@@ -307,49 +312,61 @@ nav {
   /* features-section */
 
   .features-section {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    padding: 6.25rem 0;
     background-image: url("../assets/bg-pattern-home-3.svg");
     background-repeat: no-repeat;
     background-position: right -6.25rem top 0;
   }
 
+  .features-section .wrapper {
+    padding-left: 6.063rem;
+    padding-right: 6.125rem;
+  }
+
   .features-block {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     width: 35.8125rem;
-    height: 31.875rem;
-    margin-left: 6.063rem;
-    margin-right: 6.125rem;
-    line-height: 2rem;
+    height: auto;
+    margin: 0;
     gap: 0;
   }
 
   .features-line {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    flex: none;
+    margin: 0 0 4rem;
   }
 
   .title-line {
     display: block;
     width: 3.125rem;
     height: 0.25rem;
-    margin-left: 0;
+    margin: 0 0 2rem;
+
   }
 
   .features-title {
-    width: 27.813rem;
-    height: 4rem;
+    width: 100%;
+    max-width: 27.813rem;
+    height: auto;
+    margin: 0;
     font-size: 2rem;
     line-height: 2rem;
-    margin-top: 0;
-    margin-bottom: 4rem;
   }
 
   .features-list {
-    width: 35.813rem;
-    height: 21.625rem;
+    width: 100%;
+    max-width: 35.813rem;
+    height: auto;
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 2rem;
   }
 }
