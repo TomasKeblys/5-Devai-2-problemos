@@ -204,7 +204,7 @@ header {
 }
 
 .d_grid2 button{
-    top: 2rem;
+    top: 1.86rem;
     background-color: var(--sec-rapture-blue);
 }
 
@@ -229,30 +229,12 @@ header {
 }
 
 
-
-
-
-.d_card_nikita {
-    z-index: -100;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.flipped {
+    z-index: 0;
 }
 
-.d_card_cristian {
-    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
-}
-
-.d_card_cruz {
-    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
-}
-
-.d_card_drake {
-    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
-}
-
-.d_card_griffin {
-    z-index: -10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
-}
-.d_card_aden {
-    z-index: 10;    /*<=======IMPORTANT: z-index to flip the cards, change -1 to 1*/
+.not_flipped {
+    z-index: 1;
 }
 
 /*===========================OUR CLIENTS=============================*/
