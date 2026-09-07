@@ -256,9 +256,10 @@ nav ul ul li {
 /*-------------------ready to get started-------------------*/
 @media (max-width: 1439px) {
   #ready-to-get-started {
-    width: 100%;
+    /* width: 35.813rem; */
     display: flex;
-    justify-items: center;
+    /* justify-items: center; */
+    
   }
   #ready-to-get-started img {
     top: 4.875rem;
@@ -271,7 +272,7 @@ nav ul ul li {
   }
   #ready-to-get-started div {
     /* display: flex; */
-    justify-self: auto;
+    /* justify-self: auto; */
     width: 35.813rem;
     /* min-width: 35.813rem; */
     /* justify-self: auto; */
