@@ -270,10 +270,11 @@ nav ul ul li {
   #footer div {
     display: flex;
     justify-content: space-between;
+    width: 43.063rem;
   }
   #footer .social {
     justify-content: space-between;
-    width: auto;
+    width: 43.063rem;
     height: auto;
     margin-top: 2rem;
   }
