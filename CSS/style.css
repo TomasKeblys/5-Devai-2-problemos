@@ -103,9 +103,14 @@ nav ul li {
   display: inline-block;
   margin: 0rem;
   margin-right: 0rem;
+
   & a {
     text-decoration: none;
     color: white;
+
+    &:hover {
+      color: var(--pri-light-coral);
+    }
   }
 }
 
@@ -116,6 +121,7 @@ nav button {
   border: 2px solid white;
   background-color: var(--pri-midnight-green);
   border-radius: 50px;
+
   & a {
     text-decoration: none;
     color: white;
@@ -143,10 +149,12 @@ nav ul ul li {
   align-items: center;
   padding-left: 10.313rem;
   padding-right: 10.313rem;
+
   & a {
     text-decoration: none;
     color: white;
   }
+
   & address,
   p {
     opacity: 0.6;
@@ -159,32 +167,39 @@ nav ul ul li {
   text-decoration: none;
   color: white;
 }
+
 #footer div address ul {
   list-style-type: none;
 }
+
 #footer div:first-child {
   display: flex;
 }
+
 #footer div .logo {
   height: 6.25rem;
   width: 10rem;
   display: flex;
   flex-wrap: wrap;
+
   & img {
     width: 10rem;
     height: 2.5rem;
   }
+
   & ul {
     padding: 0rem;
     margin: 0rem;
     align-content: end;
     width: 8.75rem;
     height: 1.75rem;
+
     & li:first-child {
       margin-right: 2.5rem;
     }
   }
 }
+
 #footer div address {
   height: 6.25rem;
   margin: 0rem;
@@ -195,12 +210,14 @@ nav ul ul li {
     margin: 0rem;
   }
 }
+
 #footer .social {
   height: 6.25rem;
   width: 15.938rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+
   & ul {
     list-style-type: none;
     text-align: right;
@@ -212,6 +229,7 @@ nav ul ul li {
     display: flex;
     justify-content: space-between;
   }
+
   & p {
     margin: 0rem;
     align-content: end;
@@ -228,6 +246,7 @@ nav ul ul li {
   align-content: center;
   /* display: flex; */
 }
+
 #ready-to-get-started button {
   font-family: "Livvic", arial, sans-serif;
   width: 9.563rem;
@@ -235,11 +254,13 @@ nav ul ul li {
   border: 2px solid var(--sec-sacramento-state-green);
   background-color: var(--pri-light-coral);
   border-radius: 50px;
+
   & a {
     text-decoration: none;
     color: var(--sec-sacramento-state-green);
   }
 }
+
 #ready-to-get-started div {
   justify-self: center;
   padding-left: 0.188em;
@@ -252,5 +273,3 @@ nav ul ul li {
   position: absolute;
   top: 3.5rem;
 }
-
-
