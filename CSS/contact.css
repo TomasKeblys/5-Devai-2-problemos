@@ -61,18 +61,24 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   color: var(--pri-white);
   outline: none;
+  font-family: "Livvic", arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0 0 0.875rem 0.875rem;
 }
 
 /* Žinutės laukas */
 
-#container form input:nth-child(5) {
+#container .form-field:nth-child(5) input {
   height: 5.25rem;
+  padding-top: 0;
+  padding-bottom: 3.5rem;
 }
 
 /* Užpildyto lauko būsena */
 #container form input:not(:placeholder-shown) {
   color: var(--pri-white);
-
   background-color: transparent;
 }
 
@@ -121,16 +127,7 @@
 }
 
 ::placeholder {
-  font-family: "Livvic", arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 25px;
-  color: white;
-  padding-left: 0.875rem;
-  padding-top: 0rem;
-  position: absolute;
-  top: 0rem;
+  color: var(--pri-white);
   opacity: 0.6;
 }
 
