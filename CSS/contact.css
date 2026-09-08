@@ -106,22 +106,45 @@
 
 /*--------------------header + contact form --------------------*/
 @media (max-width: 1439px) {
+  #container {
+    width: auto;
+  }
   #container main {
-    height: 75.25rem;
-    
+    max-width: 1439px;
+    min-width: 768px;
+    height: 59.938rem;
+    text-align: center;
+    width: auto;
+    margin-left: 0rem;
+    margin-top: 8.75rem;
+    & h1 {
+      line-height: 56px;
+      height: 3.5rem;
+    }
+  }
+  #container section article h1 {
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #container section article h2 {
+    height: 3rem;
   }
   #container section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: auto;
+    gap: 3.5rem;
   }
   #container section > article {
     flex: 1;
+    max-width: 32.188rem;
   }
   #container form {
     flex: 1;
     display: flex;
     flex-direction: column;
+    max-width: 33.875rem;
   }
   #container section {
     flex-direction: column;
@@ -132,12 +155,14 @@
   }
   #container .second-circle {
     position: absolute;
-    top: 81.06%;
+    top: 70.26%;
     left: 87.04%;
   }
-  #container main section > article {
-
+   #container .first-circle {
+    top: 13.5rem;
+   }
+  #container main section > article,
+  #container main section > form {
+    width: auto;
   }
-  
-
 }
