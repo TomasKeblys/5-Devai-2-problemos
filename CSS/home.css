@@ -77,7 +77,6 @@ nav {
   list-style: none;
 }
 
-
 .nav-link a {
   color: var(--pri-white);
   text-decoration: none;
@@ -211,9 +210,114 @@ nav {
   margin: 0;
 }
 
+/* testimonials-section */
+/* Atsilepimai */
+.testimonials-section {
+  width: 100%;
+  max-width: 90rem;
+  min-height: 46.5625rem;
+  box-sizing: border-box;
+  padding: 8.75rem 0 6.25rem 0;
+  background-color: var(--sec-deep-jungle-green);
+  background-image:
+    url(../assets/bg-pattern-home-4-about-3.svg),
+    url(../assets/bg-pattern-home-5.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left top,
+    right bottom;
+  text-align: center;
+}
+
+.testimonials-title {
+  max-width: 58.25rem;
+  margin: 0 auto 3.5rem auto;
+  color: var(--pri-white);
+  text-align: center;
+}
+
+.testimonials-title span {
+  color: var(--sec-rapture-blue);
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.875rem;
+  padding-top: 2.25rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  color: var(--pri-white);
+}
+
+.quote-icon {
+  position: absolute;
+  top: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.175rem;
+  height: auto;
+  z-index: 1;
+}
+
+.testimonial-card blockquote {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.testimonial-card blockquote p {
+  margin: 0;
+}
+
+.testimonial-card figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonial-card h3 {
+  margin: 0 0 0.125rem 0;
+  color: var(--sec-rapture-blue);
+}
+
+.testimonial-card small {
+  display: block;
+  font-size: 0.813rem;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  color: var(--pri-white);
+}
+
+.avatar {
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 50%;
+  border: 0.125rem solid #c4fffe;
+  margin: 0;
+}
+
+.avatar-arthur {
+  margin-top: 0.8125rem;
+}
+
 /* Tarp 1024px ir 1440px */
 
-@media (min-width: 64.063rem) and (max-width: 75rem) {
+@media (min-width: 48.01rem) and (max-width: 90rem) {
   .header,
   .features-section {
     padding-left: 2rem;
@@ -221,12 +325,12 @@ nav {
   }
 }
 
-/* Nuo 768px iki 1024px | HOME Tablet Header & Navbar */
+/* IKI 768px | HOME Tablet Header & Navbar */
 
-@media (max-width: 64rem) {
+@media (max-width: 48rem) {
   #container {
     width: 100%;
-    max-width: 64rem;
+    max-width: 48rem;
   }
 
   header nav,
@@ -247,7 +351,7 @@ nav {
 
   .nav.wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding-left: 2.438rem;
@@ -292,12 +396,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 8.75rem;
+    width: auto;
     height: 1.75rem;
     gap: 2.5rem;
     margin: 0;
     padding: 0;
     list-style: none;
+    width: auto;
   }
 
   .nav-link {
@@ -327,6 +432,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    box-sizing: border-box;
   }
 
   .nav-section.wrapper {
@@ -376,6 +482,7 @@ nav {
     display: none;
   }
 
+  /* IKI 768px | HOME Tablet features */
   /* features-section */
 
   .features-section {
@@ -433,18 +540,12 @@ nav {
     list-style: none;
     gap: 2rem;
   }
-  .features-item{
+
+  .features-item {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
     width: 100%;
     gap: 1.375rem;
-  }
-
-  .features-item img {
-    width: 4.5rem;
-    height: 4.5rem;
-    flex-shrink: 0;
   }
 
   .features-item div {
@@ -455,15 +556,12 @@ nav {
     gap: 1rem;
   }
 
+  /* IKI 768px | HOME Tablet testimionals */
+
   .testimonials-section {
     width: 48rem;
     height: 74.938rem;
   }
-
-  /* .testimonials-section.wrapper {
-    display: flex;
-    flex-direction: column;
-  } */
 
   .testimonials-container {
     display: flex;
@@ -479,11 +577,6 @@ nav {
     line-height: 2rem;
   }
 
-  /* .testimonial-card {
-    display: flex;
-    flex-direction: column;
-  } */
-
   .h3 {
     width: 21.875rem;
     height: auto;
@@ -494,7 +587,6 @@ nav {
     height: auto;
   }
   .avatar {
-    /* padding-top: 1rem; */
     margin-bottom: 1rem;
   }
 }
