@@ -101,4 +101,43 @@
   margin-bottom: 2rem;
 }
 
+/*-----------------media-tablets--------------------*/
+/*--------------------------------------------------*/
 
+/*--------------------header + contact form --------------------*/
+@media (max-width: 1439px) {
+  #container main {
+    height: 75.25rem;
+    
+  }
+  #container section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #container section > article {
+    flex: 1;
+  }
+  #container form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  #container section {
+    flex-direction: column;
+  }
+  #container section > article,
+  #container form {
+    width: 100%;
+  }
+  #container .second-circle {
+    position: absolute;
+    top: 81.06%;
+    left: 87.04%;
+  }
+  #container main section > article {
+
+  }
+  
+
+}
