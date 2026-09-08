@@ -118,12 +118,13 @@
   font-style: normal;
   font-size: 15px;
   line-height: 25px;
-  width: 9.563rem;
+  width: 7.6875rem;
   height: 3rem;
   border: 2px solid white;
   background-color: white;
   border-radius: 50px;
   color: #004047;
+  padding: 0;
 }
 
 ::placeholder {
