@@ -12,6 +12,7 @@
   min-height: 43.75rem;
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -208,38 +209,48 @@ nav {
   opacity: 0.8;
   margin: 0;
 }
- 
+
+/* Tarp 1024px ir 1440px */
+
+@media (min-width: 64.063rem) and (max-width: 75rem) {
+  .header,
+  .features-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* Nuo 768px iki 1024px | HOME Tablet Header & Navbar */
 
-@media (min-width: 48rem) and (max-width: 64rem) {
+@media (max-width: 64rem) {
+  #container {
+    width: 100%;
+    max-width: 64rem;
+  }
+
+  header nav,
+  .nav {
+    position: static;
+    width: 100% !important;
+    top: auto;
+    left: auto;
+  }
+
   .body-1.header {
     padding-top: 4rem;
     padding-bottom: 0;
     background-image: url("../assets/bg-pattern-home-2.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
-
   }
 
   .nav.wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin: 0 auto;
     padding-left: 2.438rem;
     padding-right: 2.5rem;
-  }
-
-  .nav-logo {
-    width: 8rem;
-    height: 2rem;
-    height: 3rem;
-  }
-
-  .nav-logo img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 
   .nav-container {
@@ -249,17 +260,61 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-right: 13.75rem;
+  }
+
+  .nav-logo {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .nav-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .nav-link-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 8.75rem;
+    height: 1.75rem;
     gap: 2.5rem;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
+  .nan-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .nan-link:last-child {
+    width: 3.188rem;
+    height: 1.75rem;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+  }
+
+  .nav button,
+  header nav button {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    width: 9.5625rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 
   .nav-section.wrapper {
     padding-top: 7rem;
@@ -276,12 +331,12 @@ nav {
     text-align: center;
     gap: 0;
     max-width: 42.688rem;
-    height: 13.75rem;
+    margin: 0 auto;
   }
 
   .nav-section h1,
   .h1-large {
-    width: 22rem;
+    width: 100%;
     height: auto;
     max-width: 22rem;
     margin-top: 0;
@@ -293,6 +348,7 @@ nav {
   .nav-text {
     width: 100%;
     max-width: 28.563rem;
+    height: auto;
   }
 
   .nav-text .body-1 {
@@ -300,6 +356,7 @@ nav {
     margin: 0;
     font-size: 0.938rem;
     line-height: 1.75rem;
+    opacity: 0.8;
   }
 
   .nav-text hr {
