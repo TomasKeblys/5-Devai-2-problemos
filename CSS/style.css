@@ -256,6 +256,9 @@ nav ul ul li {
 
 /*--------------------footer --------------------*/
 @media (max-width: 1439px) {
+  #container #footer {
+    width: auto;
+  }
   #footer {
     max-width: 1439px;
     min-width: 768px;
@@ -265,16 +268,18 @@ nav ul ul li {
     padding-bottom: 3.5rem;
     padding-top: 3.5rem;
     height: 16.938rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   #footer div {
     display: flex;
-    justify-content: space-between;
-    width: 43.063rem;
+    /* justify-content: space-between; */
+    width: auto;
   }
   #footer .social {
     justify-content: space-between;
-    width: 43.063rem;
+    width: auto;
     height: auto;
     margin-top: 2rem;
   }
