@@ -495,9 +495,11 @@ nav {
 
   .features-section .wrapper {
     width: 100%;
-    max-width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
     padding-left: 6.063rem;
     padding-right: 6.125rem;
+    box-sizing: border-box;
   }
 
   .features-block {
@@ -505,8 +507,6 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    max-width: 100%;
-    height: auto;
     gap: 0;
   }
 
@@ -525,7 +525,6 @@ nav {
   .features-title {
     width: 100%;
     max-width: 27.8125rem;
-    height: auto;
     margin-bottom: 4rem;
     font-size: 2rem;
     line-height: 2rem;
@@ -559,8 +558,8 @@ nav {
   /* IKI 768px | HOME Tablet testimionals */
 
   .testimonials-section {
-    width: 48rem;
-    height: 74.938rem;
+    /* width: 48rem;
+    height: 74.938rem; */
   }
 
   .testimonials-container {
