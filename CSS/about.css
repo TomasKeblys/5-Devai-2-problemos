@@ -12,6 +12,8 @@
     margin: 0px auto;
 }
 
+/*================ABOUT============================*/
+
 header {
     background-color: var(--pri-midnight-green);
     height: 32.312rem;
@@ -59,6 +61,57 @@ header {
     position: relative;
     left: 74em;
     bottom: 10.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 34.75rem;
+        width: 100%;
+    }
+
+    .about{
+        display: block;
+        width: 42.687rem;
+        height: 13.75rem;
+        margin: 9.25rem auto 7rem auto;
+    }
+
+    .red_dash {
+        display: none;
+    }
+
+    .a_h1{
+        height: 3.5rem;
+    }
+
+    .a_h1 h1{
+        margin: 0rem;
+    }
+
+    .a_p{
+        height: 8.75rem;
+        width: 33.56rem;
+        
+    }
+    .a_p p {
+        text-align: center;
+        margin: 0rem;      
+        margin-top: 1.5rem;  
+    }
+
+    .a_decor1 {
+        position: absolute;
+        z-index: 10;
+        left: 89.7%;
+        top: 22.2rem;
+    }
+
 }
 
 /*================================Director Section============================*/
