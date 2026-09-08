@@ -58,9 +58,7 @@
   height: 2.625rem;
   background-color: transparent;
   border: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   color: var(--pri-white);
   outline: none;
 }
@@ -74,7 +72,8 @@
 /* Užpildyto lauko būsena */
 #container form input:not(:placeholder-shown) {
   color: var(--pri-white);
-  border-bottom-color: var(--pri-white);
+
+  background-color: transparent;
 }
 
 /* Tuščio lauko klaidos būsena */
