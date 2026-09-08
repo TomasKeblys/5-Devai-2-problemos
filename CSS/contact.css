@@ -127,7 +127,9 @@
     margin-bottom: 1.5rem;
   }
   #container section article h2 {
-    height: 3rem;
+    padding-top: 0.4rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   #container section {
     display: flex;
@@ -158,9 +160,9 @@
     top: 70.26%;
     left: 87.04%;
   }
-   #container .first-circle {
+  #container .first-circle {
     top: 13.5rem;
-   }
+  }
   #container main section > article,
   #container main section > form {
     width: auto;
