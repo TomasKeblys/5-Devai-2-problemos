@@ -90,7 +90,7 @@
 
 /* Klaidos pranešimas */
 
-#container .erro-message {
+#container .error-message {
   display: none;
   margin-top: 0.5rem;
   margin-left: 0.875rem;
