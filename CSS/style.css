@@ -260,7 +260,7 @@ nav ul ul li {
     width: auto;
   }
   #footer {
-    max-width: 1439px;
+    max-width: none;
     min-width: 768px;
     width: auto;
     padding-left: 2.438rem;
@@ -270,10 +270,11 @@ nav ul ul li {
     height: 16.938rem;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
-  #footer div {
-    display: flex;
+  #footer > div {
+    /* display: flex; */
     /* justify-content: space-between; */
     width: auto;
   }
