@@ -267,19 +267,18 @@ nav ul ul li {
     min-width: 768px;
     width: auto;
     padding-left: 2.438rem;
-    padding-right: 3.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 3.5rem;
     padding-top: 3.5rem;
     height: 16.938rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
   }
   #footer > div {
-    /* display: flex; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
     width: auto;
+    min-width: 43.063rem;
   }
   #footer .social {
     justify-content: space-between;
@@ -290,5 +289,21 @@ nav ul ul li {
   #footer div address ul {
     text-align: right;
     list-style-position: inside;
+  }
+  #footer div .logo img {
+    width: 6rem;
+    height: 1.5rem;
+    & ul li:first-child {
+      margin-right: 1.5rem;
+    }
+  }
+  #footer div .logo ul li:first-child {
+    margin-right: 1.5rem;
+  }
+  #footer div .logo ul li {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
