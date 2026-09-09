@@ -180,8 +180,9 @@ nav ul ul li {
     align-content: end;
     width: 8.75rem;
     height: 1.75rem;
+    padding-top: 0.5rem;
     & li:first-child {
-      margin-right: 2.5rem;
+      margin-right: 2.3rem;
     }
   }
 }
