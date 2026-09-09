@@ -9,9 +9,9 @@
 #container {
   font-family: "Livvic", arial, sans-serif;
   max-width: 90rem;
-  min-height: 43.75rem;
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -209,109 +209,263 @@ nav {
   margin: 0;
 }
 
-/* testimonials-section */
-/* Atsilepimai */
-.testimonials-section {
-  width: 100%;
-  max-width: 90rem;
-  min-height: 46.5625rem;
-  box-sizing: border-box;
-  padding: 8.75rem 0 6.25rem 0;
-  background-color: var(--sec-deep-jungle-green);
-  background-image:
-    url(../assets/bg-pattern-home-4-about-3.svg),
-    url(../assets/bg-pattern-home-5.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position:
-    left top,
-    right bottom;
-  text-align: center;
+/* Tarp 1024px ir 1440px */
+
+@media (min-width: 48.01rem) and (max-width: 90rem) {
+  .header,
+  .features-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
-.testimonials-title {
-  max-width: 58.25rem;
-  margin: 0 auto 3.5rem auto;
-  color: var(--pri-white);
-  text-align: center;
+/* IKI 768px | HOME Tablet Header & Navbar */
+
+@media (max-width: 48rem) {
+  #container {
+    width: 100%;
+    max-width: 48rem;
+  }
+
+  header nav,
+  .nav {
+    position: static;
+    width: 100% !important;
+    top: auto;
+    left: auto;
+  }
+
+  .body-1.header {
+    padding-top: 4rem;
+    padding-bottom: 0;
+    background-image: url("../assets/bg-pattern-home-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .nav.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 2.438rem;
+    padding-right: 2.5rem;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 13.75rem;
+  }
+
+  .nav-logo {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .nav-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .nav-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 1.75rem;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: auto;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link:last-child {
+    width: 3.188rem;
+    height: 1.75rem;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+  }
+
+  .nav button,
+  header nav button {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    width: 9.5625rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-section.wrapper {
+    padding-top: 7rem;
+    padding-bottom: 16rem;
+    padding-left: 2.813rem;
+    padding-right: 2.5rem;
+    height: auto;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    max-width: 42.688rem;
+    margin: 0 auto;
+  }
+
+  .nav-section h1,
+  .h1-large {
+    width: 100%;
+    height: auto;
+    max-width: 22rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .nav-text {
+    width: 100%;
+    max-width: 28.563rem;
+    height: auto;
+  }
+
+  .nav-text .body-1 {
+    max-width: 28.563rem;
+    margin: 0;
+    font-size: 0.938rem;
+    line-height: 1.75rem;
+    opacity: 0.8;
+  }
+
+  .nav-text hr {
+    display: none;
+  }
+
+  /* IKI 768px | HOME Tablet features */
+  /* features-section */
+
+  .features-section {
+    padding: 6.25rem 0;
+    background-image: url("../assets/bg-pattern-home-3.svg");
+    background-repeat: no-repeat;
+    background-position: right -6.25rem top 0;
+    overflow: hidden;
+  }
+
+  .features-section .wrapper {
+    padding-left: 6.063rem;
+    padding-right: 6.125rem;
+  }
+
+  .features-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    width: 35.8125rem;
+    height: auto;
+    gap: 0;
+  }
+
+  .features-line {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title-line {
+    display: block;
+    width: 3.125rem;
+    height: 0.25rem;
+    margin: 0;
+  }
+
+  .features-title {
+    width: 100%;
+    max-width: 27.8125rem;
+    height: auto;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 35.813rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .features-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1.375rem;
+  }
+
+  .features-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* IKI 768px | HOME Tablet testimionals */
+
+  .testimonials-section {
+    width: 48rem;
+    height: 74.938rem;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    width: 35.813rem;
+  }
+
+  .testimonials-title {
+    width: 35.813rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 2rem;
+  }
+
+  .h3 {
+    width: 21.875rem;
+    height: auto;
+  }
+
+  .h3 small {
+    width: 21.875rem;
+    height: auto;
+  }
+  .avatar {
+    margin-bottom: 1rem;
+  }
 }
-
-.testimonials-title span {
-  color: var(--sec-rapture-blue);
-}
-
-.testimonials-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.875rem;
-  padding-top: 2.25rem;
-  margin: 0 auto;
-}
-
-.testimonial-card {
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  margin: 0;
-  color: var(--pri-white);
-}
-
-.quote-icon {
-  position: absolute;
-  top: -2.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4.175rem;
-  height: auto;
-  z-index: 1;
-}
-
-.testimonial-card blockquote {
-  position: relative;
-  z-index: 2;
-  margin: 0 0 1.5rem 0;
-  flex-grow: 1;
-}
-
-.testimonial-card blockquote p {
-  margin: 0;
-}
-
-.testimonial-card figcaption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.testimonial-card h3 {
-  margin: 0 0 0.125rem 0;
-  color: var(--sec-rapture-blue);
-}
-
-.testimonial-card small {
-  display: block;
-  font-size: 0.813rem;
-  font-weight: 500;
-  font-style: italic;
-  opacity: 0.8;
-  margin-bottom: 2rem;
-  color: var(--pri-white);
-}
-
-.avatar {
-  width: 3.875rem;
-  height: 3.875rem;
-  border-radius: 50%;
-  border: 0.125rem solid #c4fffe;
-  margin: 0;
-}
-
-.avatar-arthur {
-  margin-top: 0.8125rem;
-}
-
-
