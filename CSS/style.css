@@ -243,9 +243,16 @@ nav ul ul li {
   border: 2px solid var(--sec-sacramento-state-green);
   background-color: var(--pri-light-coral);
   border-radius: 50px;
+  cursor: pointer;
   & a {
     text-decoration: none;
     color: var(--sec-sacramento-state-green);
+  }
+}
+#ready-to-get-started button:hover{
+  background-color: var(--sec-dark-green);
+  & a{
+    color: white;
   }
 }
 #ready-to-get-started div {
