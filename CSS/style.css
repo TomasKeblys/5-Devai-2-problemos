@@ -5,7 +5,7 @@
   --pri-midnight-green: #014e56;
   --pri-light-coral: #f67e7e;
   --pri-white: #ffffff;
-  --sec-rapture-blue: #79C8C7;
+  --sec-rapture-blue: #79c8c7;
   --sec-police-blue: #2c6269;
   --sec-deep-jungle-green: #004047;
   --sec-sacramento-state-green: #012f34;
@@ -151,6 +151,9 @@ nav ul ul li {
   p {
     opacity: 0.6;
   }
+  & a:hover {
+    color: var(--pri-light-coral);
+  }
 }
 
 #footer div div ul li {
@@ -213,6 +216,10 @@ nav ul ul li {
     display: flex;
     justify-content: space-between;
   }
+  & img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--pri-light-coral))
+      saturate(1000%);
+  }
   & p {
     margin: 0rem;
     align-content: end;
@@ -260,5 +267,3 @@ nav ul ul li {
   position: absolute;
   top: 3.5rem;
 }
-
-
