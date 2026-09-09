@@ -319,6 +319,8 @@ nav ul ul li {
     font-style: normal;
     font-size: 15px;
     line-height: 25px;
+  }
+
   #ready-to-get-started {
     display: flex;
     overflow: hidden;
@@ -341,5 +343,4 @@ nav ul ul li {
     margin-left: 6.063rem;
     margin-right: 6.125rem;
   }
-}
 }
