@@ -148,6 +148,9 @@
     flex-direction: column;
     max-width: 33.875rem;
   }
+  #container main section form :last-child {
+    width: 7.688rem;
+  }
   #container section {
     flex-direction: column;
   }
@@ -158,7 +161,7 @@
   #container .second-circle {
     position: absolute;
     top: 70.26%;
-    left: 87.04%;
+    left: 41.781rem;
   }
   #container .first-circle {
     top: 13.5rem;
