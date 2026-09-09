@@ -256,7 +256,7 @@ nav ul ul li {
 
 /*--------------------footer --------------------*/
 @media (max-width: 1439px) {
-  #container #footer {
+  #container {
     width: auto;
   }
   #footer {
