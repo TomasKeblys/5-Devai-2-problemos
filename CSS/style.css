@@ -267,3 +267,33 @@ nav ul ul li {
   position: absolute;
   top: 3.5rem;
 }
+
+/*-------------------media-tablets--------------------------*/
+/*-------------------ready to get started-------------------*/
+@media (max-width: 1439px) {
+  #container {
+    width: auto;
+  }
+  #ready-to-get-started {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+  }
+  #ready-to-get-started img {
+    top: 4.875rem;
+  }
+  #ready-to-get-started h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0rem;
+    align-content: center;
+  }
+  #ready-to-get-started div {
+    justify-content: space-between;
+    width: 75rem;
+    max-width: 75rem;
+    min-width: 35.813rem;
+    margin-left: 6.063rem;
+    margin-right: 6.125rem;
+  }
+}
