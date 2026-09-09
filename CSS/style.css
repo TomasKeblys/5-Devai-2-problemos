@@ -5,7 +5,7 @@
   --pri-midnight-green: #014e56;
   --pri-light-coral: #f67e7e;
   --pri-white: #ffffff;
-  --sec-rapture-blue: #79C8C7;
+  --sec-rapture-blue: #79c8c7;
   --sec-police-blue: #2c6269;
   --sec-deep-jungle-green: #004047;
   --sec-sacramento-state-green: #012f34;
@@ -26,7 +26,7 @@
   margin: 0px auto;
 }
 
-/* headings styles*/
+/*-------------------- headings styles--------------------*/
 
 .h1-large {
   font-weight: 700;
@@ -56,7 +56,7 @@
   line-height: 28px;
 }
 
-/* text styles*/
+/*-------------------- text styles--------------------*/
 
 .body-1 {
   font-weight: 600;
@@ -72,7 +72,7 @@
   line-height: 25px;
 }
 
-/*navbar*/
+/*--------------------navbar--------------------*/
 header {
   align-content: center;
 }
@@ -103,9 +103,14 @@ nav ul li {
   display: inline-block;
   margin: 0rem;
   margin-right: 0rem;
+
   & a {
     text-decoration: none;
     color: white;
+
+    &:hover {
+      color: var(--pri-light-coral);
+    }
   }
 }
 
@@ -116,9 +121,19 @@ nav button {
   border: 2px solid white;
   background-color: var(--pri-midnight-green);
   border-radius: 50px;
+  cursor: pointer;
+
   & a {
     text-decoration: none;
     color: white;
+  }
+
+  &:hover {
+    background-color: var(--pri-white);
+
+    & a {
+      color: var(--pri-midnight-green);
+    }
   }
 }
 
@@ -130,7 +145,7 @@ nav ul ul li {
   width: 3.125rem;
 }
 
-/*footer*/
+/*--------------------footer--------------------*/
 #footer {
   align-content: center;
   width: 1440px;
@@ -143,13 +158,18 @@ nav ul ul li {
   align-items: center;
   padding-left: 10.313rem;
   padding-right: 10.313rem;
+
   & a {
     text-decoration: none;
     color: white;
   }
+
   & address,
   p {
     opacity: 0.6;
+  }
+  & a:hover {
+    color: var(--pri-light-coral);
   }
 }
 
@@ -159,33 +179,39 @@ nav ul ul li {
   text-decoration: none;
   color: white;
 }
+
 #footer div address ul {
   list-style-type: none;
 }
+
 #footer div:first-child {
   display: flex;
 }
+
 #footer div .logo {
   height: 6.25rem;
   width: 10rem;
   display: flex;
   flex-wrap: wrap;
+
   & img {
     width: 10rem;
     height: 2.5rem;
   }
+
   & ul {
     padding: 0rem;
     margin: 0rem;
     align-content: end;
     width: 8.75rem;
     height: 1.75rem;
-    padding-top: 0.5rem;
+
     & li:first-child {
       margin-right: 2.3rem;
     }
   }
 }
+
 #footer div address {
   height: 6.25rem;
   margin: 0rem;
@@ -196,12 +222,14 @@ nav ul ul li {
     margin: 0rem;
   }
 }
+
 #footer .social {
   height: 6.25rem;
   width: 15.938rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+
   & ul {
     list-style-type: none;
     text-align: right;
@@ -213,13 +241,17 @@ nav ul ul li {
     display: flex;
     justify-content: space-between;
   }
+  & img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--pri-light-coral))
+      saturate(1000%);
+  }
   & p {
     margin: 0rem;
     align-content: end;
   }
 }
 
-/*ready to get started*/
+/*--------------------ready to get started--------------------*/
 
 #ready-to-get-started {
   position: relative;
@@ -229,6 +261,7 @@ nav ul ul li {
   align-content: center;
   /* display: flex; */
 }
+
 #ready-to-get-started button {
   font-family: "Livvic", arial, sans-serif;
   width: 9.563rem;
@@ -236,9 +269,16 @@ nav ul ul li {
   border: 2px solid var(--sec-sacramento-state-green);
   background-color: var(--pri-light-coral);
   border-radius: 50px;
+  cursor: pointer;
   & a {
     text-decoration: none;
     color: var(--sec-sacramento-state-green);
+  }
+}
+#ready-to-get-started button:hover{
+  background-color: var(--sec-dark-green);
+  & a{
+    color: white;
   }
 }
 #ready-to-get-started div {
@@ -254,4 +294,79 @@ nav ul ul li {
   top: 3.5rem;
 }
 
+/*-----------------media-tablets--------------------*/
+/*--------------------------------------------------*/
 
+/*--------------------footer --------------------*/
+@media (max-width: 1439px) {
+  #container {
+    width: auto;
+  }
+  #footer {
+    max-width: none;
+    min-width: 768px;
+    width: auto;
+    padding-left: 2.438rem;
+    padding-right: 2.5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+    height: 16.938rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  #footer > div {
+    justify-content: space-between;
+    width: auto;
+    min-width: 43.063rem;
+  }
+  #footer .social {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+  }
+  #footer div address ul {
+    text-align: right;
+    list-style-position: inside;
+  }
+  #footer div .logo img {
+    width: 6rem;
+    height: 1.5rem;
+    & ul li:first-child {
+      margin-right: 1.5rem;
+    }
+  }
+  #footer div .logo ul li:first-child {
+    margin-right: 1.5rem;
+  }
+  #footer div .logo ul li {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #ready-to-get-started {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+  }
+  #ready-to-get-started img {
+    top: 4.875rem;
+  }
+  #ready-to-get-started h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0rem;
+    align-content: center;
+  }
+  #ready-to-get-started div {
+    justify-content: space-between;
+    width: 75rem;
+    max-width: 75rem;
+    min-width: 35.813rem;
+    margin-left: 6.063rem;
+    margin-right: 6.125rem;
+  }
+}
