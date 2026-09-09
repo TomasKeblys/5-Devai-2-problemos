@@ -253,13 +253,16 @@ nav ul ul li {
   top: 3.5rem;
 }
 
+/*-------------------media-tablets--------------------------*/
 /*-------------------ready to get started-------------------*/
 @media (max-width: 1439px) {
+  #container {
+    width: auto;
+  }
   #ready-to-get-started {
-    /* width: 35.813rem; */
     display: flex;
-    /* justify-items: center; */
-    
+    overflow: hidden;
+    align-items: center;
   }
   #ready-to-get-started img {
     top: 4.875rem;
@@ -271,12 +274,10 @@ nav ul ul li {
     align-content: center;
   }
   #ready-to-get-started div {
-    /* display: flex; */
-    /* justify-self: auto; */
-    width: 35.813rem;
-    /* min-width: 35.813rem; */
-    /* justify-self: auto; */
-    /* justify-content: center; */
+    justify-content: space-between;
+    width: 75rem;
+    max-width: 75rem;
+    min-width: 35.813rem;
     margin-left: 6.063rem;
     margin-right: 6.125rem;
   }
