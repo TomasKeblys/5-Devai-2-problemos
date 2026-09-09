@@ -353,7 +353,7 @@ header {
         display: block;
         width: 42.687rem;
         height: 13.75rem;
-        margin: 9.25rem auto 7rem auto;
+        margin: 9.288rem auto 7rem auto;
     }
 
     .red_dash {
@@ -370,10 +370,11 @@ header {
 
     .a_p{
         height: 8.75rem;
-        width: 33.56rem;
+        width: 28.562rem;
         
     }
     .a_p p {
+        font-size: 0.937rem;
         text-align: center;
         margin: 0rem;      
         margin-top: 1.5rem;  
@@ -382,7 +383,7 @@ header {
     .a_decor1 {
         position: absolute;
         z-index: 10;
-        left: 89.7%;
+        left: 86.6%;
         top: 22.2rem;
     }
 
