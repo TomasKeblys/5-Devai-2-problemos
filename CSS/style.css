@@ -319,5 +319,27 @@ nav ul ul li {
     font-style: normal;
     font-size: 15px;
     line-height: 25px;
+  #ready-to-get-started {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
   }
+  #ready-to-get-started img {
+    top: 4.875rem;
+  }
+  #ready-to-get-started h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0rem;
+    align-content: center;
+  }
+  #ready-to-get-started div {
+    justify-content: space-between;
+    width: 75rem;
+    max-width: 75rem;
+    min-width: 35.813rem;
+    margin-left: 6.063rem;
+    margin-right: 6.125rem;
+  }
+}
 }
