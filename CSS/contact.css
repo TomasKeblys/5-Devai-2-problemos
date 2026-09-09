@@ -11,91 +11,150 @@
   width: 1440px;
   margin: 0px auto;
   color: white;
+
   & h2 {
     color: var(--pri-light-coral);
     font-size: 32px;
   }
 }
+
 #container .second-circle {
   position: absolute;
   top: 35.25rem;
   left: 83.75rem;
 }
+
 #container .first-circle {
   position: absolute;
   top: 15.313rem;
   left: -6.25rem;
 }
+
 #container main {
   margin-top: 10.063rem;
   width: 69.5rem;
   height: 34rem;
   margin-left: 10.313rem;
 }
+
 #container section {
   height: 26.75rem;
   display: flex;
   justify-content: flex-end;
 }
+
+#container form {
+  width: 33.875rem;
+}
+
+#container .form-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
 #container form input {
   display: inline-block;
   width: 33.875rem;
-  margin-bottom: 1.5rem;
   height: 2.625rem;
   background-color: transparent;
   border: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  color: var(--pri-white);
+  outline: none;
+  font-family: "Livvic", arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0 0 0.875rem 0.875rem;
 }
-#container form input:nth-child(5) {
+
+/* Žinutės laukas */
+
+#container .form-field:nth-child(5) input {
   height: 5.25rem;
+  padding-top: 0;
+  padding-bottom: 3.5rem;
 }
+
+/* Užpildyto lauko būsena */
+#container form input:not(:placeholder-shown) {
+  color: var(--pri-white);
+  background-color: transparent;
+}
+
+/* Tuščio lauko klaidos būsena */
+
+#container .form-field.error input {
+  color: var(--pri-light-coral);
+  border-bottom-color: var(--pri-light-coral);
+}
+
+#container .form-field.error input::placeholder {
+  color: var(--pri-light-coral);
+}
+
+/* Klaidos pranešimas */
+
+#container .error-message {
+  display: none;
+  margin-top: 0.5rem;
+  margin-left: 0.875rem;
+  font-family: "Livvic", arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  color: var(--pri-light-coral);
+}
+
+#container .form-field.error .error-message {
+  display: block;
+}
+
+/* Submit mygtukas */
+
 #container form input[type="submit"] {
   font-family: "Livvic", arial, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 15px;
   line-height: 25px;
-  width: 9.563rem;
+  width: 7.6875rem;
   height: 3rem;
   border: 2px solid white;
   background-color: white;
   border-radius: 50px;
   color: #004047;
+  padding: 0;
 }
+
 ::placeholder {
-  font-family: "Livvic", arial, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 25px;
-  color: white;
-  padding-left: 0.875rem;
-  padding-top: 0rem;
-  position: absolute;
-  top: 0rem;
+  color: var(--pri-white);
   opacity: 0.6;
 }
+
 #container article img {
   width: 4.5rem;
   height: 4.5rem;
   margin-right: 1.438rem;
 }
+
 #container article article {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
+
 #container article {
   width: 33.75rem;
 }
+
 #container section article h1 {
   height: 6.25rem;
   margin: 0rem;
   align-content: center;
   margin-bottom: 1rem;
 }
+
 #container section article h2 {
   margin-top: 0rem;
   margin-bottom: 2rem;

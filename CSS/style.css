@@ -151,6 +151,9 @@ nav ul ul li {
   p {
     opacity: 0.6;
   }
+  & a:hover {
+    color: var(--pri-light-coral);
+  }
 }
 
 #footer div div ul li {
@@ -213,6 +216,10 @@ nav ul ul li {
     display: flex;
     justify-content: space-between;
   }
+  & img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--pri-light-coral))
+      saturate(1000%);
+  }
   & p {
     margin: 0rem;
     align-content: end;
@@ -236,9 +243,16 @@ nav ul ul li {
   border: 2px solid var(--sec-sacramento-state-green);
   background-color: var(--pri-light-coral);
   border-radius: 50px;
+  cursor: pointer;
   & a {
     text-decoration: none;
     color: var(--sec-sacramento-state-green);
+  }
+}
+#ready-to-get-started button:hover{
+  background-color: var(--sec-dark-green);
+  & a{
+    color: white;
   }
 }
 #ready-to-get-started div {
