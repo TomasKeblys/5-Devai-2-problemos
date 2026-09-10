@@ -5,7 +5,7 @@
   --pri-midnight-green: #014e56;
   --pri-light-coral: #f67e7e;
   --pri-white: #ffffff;
-  --sec-rapture-blue: #79C8C7;
+  --sec-rapture-blue: #79c8c7;
   --sec-police-blue: #2c6269;
   --sec-deep-jungle-green: #004047;
   --sec-sacramento-state-green: #012f34;
@@ -26,7 +26,7 @@
   margin: 0px auto;
 }
 
-/* headings styles*/
+/*-------------------- headings styles--------------------*/
 
 .h1-large {
   font-weight: 700;
@@ -56,7 +56,7 @@
   line-height: 28px;
 }
 
-/* text styles*/
+/*-------------------- text styles--------------------*/
 
 .body-1 {
   font-weight: 600;
@@ -72,7 +72,7 @@
   line-height: 25px;
 }
 
-/*navbar*/
+/*--------------------navbar--------------------*/
 header {
   align-content: center;
 }
@@ -103,22 +103,36 @@ nav ul li {
   display: inline-block;
   margin: 0rem;
   margin-right: 0rem;
+
   & a {
     text-decoration: none;
     color: white;
+
+    &:hover {
+      color: var(--pri-light-coral);
+    }
   }
 }
 
 nav button {
-  font-family: "Livvic", arial, sans-serif;
   width: 9.563rem;
   height: 3rem;
   border: 2px solid white;
   background-color: var(--pri-midnight-green);
   border-radius: 50px;
+  cursor: pointer;
+
   & a {
     text-decoration: none;
     color: white;
+  }
+
+  &:hover {
+    background-color: var(--pri-white);
+
+    & a {
+      color: var(--pri-midnight-green);
+    }
   }
 }
 
@@ -130,7 +144,7 @@ nav ul ul li {
   width: 3.125rem;
 }
 
-/*footer*/
+/*--------------------footer--------------------*/
 #footer {
   align-content: center;
   width: 1440px;
@@ -143,13 +157,19 @@ nav ul ul li {
   align-items: center;
   padding-left: 10.313rem;
   padding-right: 10.313rem;
+
   & a {
     text-decoration: none;
     color: white;
   }
+
   & address,
   p {
     opacity: 0.6;
+  }
+
+  & a:hover {
+    color: var(--pri-light-coral);
   }
 }
 
@@ -159,21 +179,26 @@ nav ul ul li {
   text-decoration: none;
   color: white;
 }
+
 #footer div address ul {
   list-style-type: none;
 }
+
 #footer div:first-child {
   display: flex;
 }
+
 #footer div .logo {
   height: 6.25rem;
   width: 10rem;
   display: flex;
   flex-wrap: wrap;
+
   & img {
     width: 10rem;
     height: 2.5rem;
   }
+
   & ul {
     padding: 0rem;
     margin: 0rem;
@@ -181,11 +206,13 @@ nav ul ul li {
     width: 8.75rem;
     height: 1.75rem;
     padding-top: 0.5rem;
+
     & li:first-child {
       margin-right: 2.3rem;
     }
   }
 }
+
 #footer div address {
   height: 6.25rem;
   margin: 0rem;
@@ -196,12 +223,14 @@ nav ul ul li {
     margin: 0rem;
   }
 }
+
 #footer .social {
   height: 6.25rem;
   width: 15.938rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+
   & ul {
     list-style-type: none;
     text-align: right;
@@ -213,13 +242,14 @@ nav ul ul li {
     display: flex;
     justify-content: space-between;
   }
+
   & p {
     margin: 0rem;
     align-content: end;
   }
 }
 
-/*ready to get started*/
+/*--------------------ready to get started--------------------*/
 
 #ready-to-get-started {
   position: relative;
@@ -229,18 +259,20 @@ nav ul ul li {
   align-content: center;
   /* display: flex; */
 }
+
 #ready-to-get-started button {
-  font-family: "Livvic", arial, sans-serif;
   width: 9.563rem;
   height: 3rem;
   border: 2px solid var(--sec-sacramento-state-green);
   background-color: var(--pri-light-coral);
   border-radius: 50px;
+
   & a {
     text-decoration: none;
     color: var(--sec-sacramento-state-green);
   }
 }
+
 #ready-to-get-started div {
   justify-self: center;
   padding-left: 0.188em;
@@ -254,4 +286,46 @@ nav ul ul li {
   top: 3.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav.wrapper {
+    width: 43.0625rem;
+    height: 3rem;
+    top: 4rem;
+    left: 0;
+    transform: none;
+  }
 
+  nav ul {
+    width: 20.75rem;
+    height: 3rem;
+    margin: 0rem;
+  }
+
+  nav ul>li:first-child img {
+    width: 8rem;
+    height: 2.375rem;
+    display: block;
+  }
+
+  nav ul ul {
+    width: 8.75rem;
+    height: 1.75rem;
+  }
+
+  nav ul ul li {
+    height: 1.75rem;
+  }
+
+  nav ul ul li a {
+    line-height: 1.75rem;
+  }
+
+  nav button {
+    width: 9.5625rem;
+    height: 3rem;
+  }
+
+  nav button a {
+    line-height: 1.75rem;
+  }
+}
