@@ -207,7 +207,7 @@ nav ul ul li {
     height: 1.75rem;
     padding-top: 0.5rem;
 
-    >>>>>>>>>Temporary merge branch 2 & li:first-child {
+    & li:first-child {
       margin-right: 2.3rem;
     }
   }
