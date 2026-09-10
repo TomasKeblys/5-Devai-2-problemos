@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/home.css" />
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
@@ -22,19 +23,19 @@
             <nav class="nav wrapper">
                 <ul class="nav-container">
                     <li class="nav-logo">
-                        <img src="../assets/logo.svg" alt="logo" />
+                        <img src="./assets/logo.svg" alt="logo" />
                     </li>
                     <ul class="nav-link-container">
                         <li class="nav-link">
-                            <a href="#">home</a>
+                            <a href="./index.html">home</a>
                         </li>
                         <li class="nav-link">
-                            <a href="../pages/about.html">about</a>
+                            <a href="./pages/about.html">about</a>
                         </li>
                     </ul>
                 </ul>
                 <button class="body-1">
-                    <a href="../pages/contact.html">contact us</a>
+                    <a href="./pages/contact.html">contact us</a>
                 </button>
 
                 <!-- Navbar mobile: rodomas tik iki 767px -->
@@ -135,57 +136,59 @@
                 </div>
             </section>
 
-            <section>
-                <h2>
-                    Delivering real results for top companies. Some of our
-                    <span>success stories.</span>
-                </h2>
-                <div>
-                    <figure>
-                        <img src="./assets/icon-quotes.svg" alt="quotes icon" />
-                        <blockquote>
-                            <p>
-                                “The team perfectly fit the specialized skill set required.
-                                They focused on the most essential features helping us launch
-                                the platform eight months faster than planned.”
-                            </p>
-                        </blockquote>
-                        <figcaption>
-                            <img src="./assets/avatar-kady.jpg" alt="kady photo" />
-                            <h3>Kady Baker</h3>
-                            <small>Product Manager at Bookmark</small>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./assets/icon-quotes.svg" alt="quotes icon" />
-                        <blockquote>
-                            <p>
-                                “We needed to automate our entire onboarding process. The team
-                                came in and built out the whole journey. Since going live,
-                                user retention has gone through the roof!”
-                            </p>
-                        </blockquote>
-                        <figcaption>
-                            <img src="./assets/avatar-aiysha.jpg" alt="aiysha photo" />
-                            <h3>Aiysha Reese</h3>
-                            <small>Founder of Manage</small>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./assets/icon-quotes.svg" alt="quotes icon" />
-                        <blockquote>
-                            <p>
-                                “Amazing. Our team helped us build an app that delivered a new
-                                experience for hiring a physio. The launch was an instant
-                                success with 100k downloads in the first month.”
-                            </p>
-                        </blockquote>
-                        <figcaption>
-                            <img src="./assets/avatar-arthur.jpg" alt="arthur photo" />
-                            <h3>Arthur Clarke</h3>
-                            <small>Co-founder of MyPhysio</small>
-                        </figcaption>
-                    </figure>
+            <section class="testimonials-section">
+                <div class="wrapper">
+                    <h2 class="h2 testimonials-title">
+                        Delivering real results for top companies. Some of our
+                        <span>success stories.</span>
+                    </h2>
+                    <div class="testimonials-container">
+                        <figure class="testimonial-card">
+                            <img class="quote-icon" src="./assets/icon-quotes.svg" alt="quotes icon" />
+                            <blockquote>
+                                <p class="body-2">
+                                    “The team perfectly fit the specialized skill set required.
+                                    They focused on the most essential features helping us launch
+                                    the platform eight months faster than planned.”
+                                </p>
+                            </blockquote>
+                            <figcaption>
+                                <h3 class="h3">Kady Baker</h3>
+                                <small>Product Manager at Bookmark</small>
+                                <img class="avatar" src="./assets/avatar-kady.jpg" alt="Kady photo" />
+                            </figcaption>
+                        </figure>
+                        <figure class="testimonial-card">
+                            <img class="quote-icon" src="./assets/icon-quotes.svg" alt="quotes icon" />
+                            <blockquote>
+                                <p class="body-2">
+                                    “We needed to automate our entire onboarding process. The team
+                                    came in and built out the whole journey. Since going live,
+                                    user retention has gone through the roof!”
+                                </p>
+                            </blockquote>
+                            <figcaption>
+                                <h3 class="h3">Aiysha Reese</h3>
+                                <small>Founder of Manage</small>
+                                <img class="avatar" src="./assets/avatar-aiysha.jpg" alt="Aiysha photo" />
+                            </figcaption>
+                        </figure>
+                        <figure class="testimonial-card">
+                            <img class="quote-icon" src="./assets/icon-quotes.svg" alt="quotes icon" />
+                            <blockquote>
+                                <p class="body-2">
+                                    “Amazing. Our team helped us build an app that delivered a new
+                                    experience for hiring a physio. The launch was an instant
+                                    success with 100k downloads in the first month.”
+                                </p>
+                            </blockquote>
+                            <figcaption>
+                                <h3 class="h3">Arthur Clarke</h3>
+                                <small>Co-founder of MyPhysio</small>
+                                <img class="avatar avatar-arthur" src="./assets/avatar-arthur.jpg" alt="arthur photo" />
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
             <section id="ready-to-get-started">
@@ -198,50 +201,48 @@
                 <img src="./assets/bg-pattern-home-6-about-5.svg" alt="" />
             </section>
         </main>
-        <footer>
+
+        <footer id="footer">
             <div>
-                <div>
-                    <a href="#">
-                        <img src="./assets/logo.svg" alt="logo" />
-                    </a>
-                    <ul>
+                <div class="logo">
+                    <img src="./assets/logo.svg" alt="logo" />
+                    <ul class="body-1">
                         <li>
-                            <a href="#">home</a>
+                            <a href="./index.html">home</a>
                         </li>
                         <li>
                             <a href="./pages/about.html">about</a>
                         </li>
                     </ul>
                 </div>
-                <address>
-                    987 Hillcrest Lane
-                    <br />
-                    Irvine, CA
-                    <br />
-                    California 92714
-                    <br />
-                    <a href="tel:9498337432">Call Us : 949-833-7432</a>
-                </address>
-                <div>
+                <address class="body-2">
                     <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/icon-facebook.svg" alt="Facebook" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/icon-pinterest.svg" alt="Pinterest" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./assets/icon-twitter.svg" alt="Twitter" />
-                            </a>
-                        </li>
+                        <li>987 Hillcrest Lane</li>
+                        <li>Irvine, CA</li>
+                        <li>California 92714</li>
+                        <li>Call Us : 949-833-7432</li>
                     </ul>
-                    <p>Copyright 2020. All Rights Reserved</p>
-                </div>
+                </address>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/icon-facebook.svg" alt="Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/icon-pinterest.svg" alt="Pinterest" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/icon-twitter.svg" alt="Twitter" />
+                        </a>
+                    </li>
+                </ul>
+                <p class="body-2">Copyright 2020. All Rights Reserved</p>
             </div>
         </footer>
     </div>
