@@ -132,6 +132,7 @@ nav {
 }
 
 /* features section */
+
 .features-section {
   display: flex;
   justify-content: space-between;
@@ -217,6 +218,7 @@ nav {
 
 /* testimonials-section */
 /* Atsilepimai */
+
 .testimonials-section {
   width: 100%;
   max-width: 90rem;
@@ -254,13 +256,14 @@ nav {
   margin: 0 auto;
 }
 
+/* Korteliu styliai */
+
 .testimonial-card {
   position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   margin: 0;
   color: var(--pri-white);
 }
@@ -279,7 +282,6 @@ nav {
   position: relative;
   z-index: 2;
   margin: 0 0 1.5rem 0;
-  flex-grow: 1;
 }
 
 .testimonial-card blockquote p {
@@ -312,7 +314,7 @@ nav {
   width: 3.875rem;
   height: 3.875rem;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px #C4FFFE;
+  box-shadow: 0 0 0 2px #c4fffe;
   box-sizing: border-box;
   object-fit: cover;
   display: block;
@@ -323,7 +325,6 @@ nav {
 .avatar-arthur {
   margin-top: 0.8125rem;
 }
-
 
 /* Tarp 1024px ir 1440px */
 
@@ -338,6 +339,7 @@ nav {
 /* IKI 768px | HOME Tablet Header & Navbar */
 
 @media (max-width: 48rem) {
+  /* Tablet konteineris ir ju navigacija */
   #container {
     width: 100%;
     max-width: 48rem;
@@ -433,6 +435,8 @@ nav {
     box-sizing: border-box;
   }
 
+  /* Tablet hero turinys */
+
   .nav-section.wrapper {
     padding-top: 7rem;
     padding-bottom: 16rem;
@@ -466,6 +470,7 @@ nav {
     width: 100%;
     max-width: 28.563rem;
     height: auto;
+    transform: translateX(-2px);
   }
 
   .nav-text .body-1 {
@@ -551,37 +556,107 @@ nav {
     gap: 1rem;
   }
 
-  /* IKI 768px | HOME Tablet testimionals */
+  /*HOME Tablet atsiliepimu sekcija testimionals */
 
   .testimonials-section {
+    width: 100%;
     width: 48rem;
-    height: 74.938rem;
+    height: 74.9375rem;
+    padding: 6.25rem 0;
+    box-sizing: border-box;
+  }
+
+  .testimonials-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonials-container {
     display: flex;
     flex-direction: column;
-    width: 35.813rem;
+    text-align: center;
+    width: 100%;
+    width: 35.8125rem;
+    margin: 0 auto;
+    gap: 3rem;
   }
 
   .testimonials-title {
-    width: 35.813rem;
+    width: 100%;
+    width: 30.125rem;
     text-align: center;
     font-size: 2rem;
     font-style: normal;
     line-height: 2rem;
+    margin: 0 auto 0.75rem;
   }
 
-  .h3 {
-    width: 21.875rem;
-    height: auto;
+  .testimonials-title span {
+    display: block;
+    color: #79c8c7;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
-  .h3 small {
-    width: 21.875rem;
-    height: auto;
+  .testimonial-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 2.25rem;
   }
-  .avatar {
-    margin-bottom: 1rem;
+
+  .testimonial-card .quote-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .testimonial-card blockquote {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  .testimonial-card blockquote p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+
+  .testimonial-card figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card h3 {
+    margin: 0 0 0.125rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .testimonial-card small {
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+
+  .testimonial-card .avatar {
+    display: block;
+    transform: translateY(2px);
+    width: 3.875rem;
+    height: 3.875rem;
+    border-radius: 50%;
+  }
+  .testimonial-card:last-child .avatar {
+    transform: translateY(-14px);
   }
 }
