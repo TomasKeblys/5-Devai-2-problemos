@@ -212,6 +212,7 @@ nav {
 /* Tarp 1024px ir 1440px */
 
 @media (min-width: 48.01rem) and (max-width: 90rem) {
+
   .header,
   .features-section {
     padding-left: 2rem;
@@ -230,7 +231,7 @@ nav {
   header nav,
   .nav {
     position: static;
-    width: 100% !important;
+    width: 100%;
     top: auto;
     left: auto;
   }
@@ -244,12 +245,13 @@ nav {
   }
 
   .nav.wrapper {
+    width: 43.0625rem;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-left: 2.438rem;
-    padding-right: 2.5rem;
+
   }
 
   .nav-container {
@@ -465,6 +467,7 @@ nav {
     width: 21.875rem;
     height: auto;
   }
+
   .avatar {
     margin-bottom: 1rem;
   }
