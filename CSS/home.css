@@ -9,6 +9,7 @@
 #container {
   font-family: "Livvic", arial, sans-serif;
   max-width: 90rem;
+  min-height: 42.75rem;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
@@ -76,10 +77,6 @@ nav {
   list-style: none;
 }
 
-.nav-link {
-  list-style: none;
-}
-
 .nav-link a {
   color: var(--pri-white);
   text-decoration: none;
@@ -144,22 +141,26 @@ nav {
   gap: 7.8125rem;
 }
 
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 7.8125rem;
+}
+
 .features-line {
-  margin-bottom: 3.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 27.8125rem;
 }
 
 .title-line {
   display: block;
   width: 3.125rem;
   height: 0.25rem;
+  margin-bottom: 3.375rem;
   background-color: var(--pri-light-coral);
-}
-
-.features-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 7.8125rem;
 }
 
 .features-title {
@@ -172,18 +173,18 @@ nav {
 
 .features-list {
   width: 33.75rem;
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .features-item {
   display: flex;
   align-items: flex-start;
-  gap: 1.4375rem;
+  gap: 1.44rem;
 }
 
 .features-item img {
@@ -207,6 +208,111 @@ nav {
   color: var(--pri-white);
   opacity: 0.8;
   margin: 0;
+}
+
+/* testimonials-section */
+/* Atsilepimai */
+.testimonials-section {
+  width: 100%;
+  max-width: 90rem;
+  min-height: 46.5625rem;
+  box-sizing: border-box;
+  padding: 8.75rem 0 6.25rem 0;
+  background-color: var(--sec-deep-jungle-green);
+  background-image:
+    url(../assets/bg-pattern-home-4-about-3.svg),
+    url(../assets/bg-pattern-home-5.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left top,
+    right bottom;
+  text-align: center;
+}
+
+.testimonials-title {
+  max-width: 58.25rem;
+  margin: 0 auto 3.5rem auto;
+  color: var(--pri-white);
+  text-align: center;
+}
+
+.testimonials-title span {
+  color: var(--sec-rapture-blue);
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.875rem;
+  padding-top: 2.25rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  color: var(--pri-white);
+}
+
+.quote-icon {
+  position: absolute;
+  top: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4.175rem;
+  height: auto;
+  z-index: 1;
+}
+
+.testimonial-card blockquote {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.testimonial-card blockquote p {
+  margin: 0;
+}
+
+.testimonial-card figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.testimonial-card h3 {
+  margin: 0 0 0.125rem 0;
+  color: var(--sec-rapture-blue);
+}
+
+.testimonial-card small {
+  display: block;
+  font-size: 0.813rem;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  color: var(--pri-white);
+}
+
+.avatar {
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 50%;
+  border: 0.125rem solid #c4fffe;
+  margin: 0;
+}
+
+.avatar-arthur {
+  margin-top: 0.8125rem;
 }
 
 /* Tarp 1024px ir 1440px */
@@ -252,6 +358,18 @@ nav {
     align-items: center;
     margin: 0 auto;
 
+  }
+
+  .nav-logo {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  .nav-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .nav-container {
@@ -378,8 +496,12 @@ nav {
   }
 
   .features-section .wrapper {
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
     padding-left: 6.063rem;
     padding-right: 6.125rem;
+    box-sizing: border-box;
   }
 
   .features-block {
@@ -387,8 +509,6 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    width: 35.8125rem;
-    height: auto;
     gap: 0;
   }
 
@@ -407,7 +527,6 @@ nav {
   .features-title {
     width: 100%;
     max-width: 27.8125rem;
-    height: auto;
     margin-bottom: 4rem;
     font-size: 2rem;
     line-height: 2rem;
@@ -417,10 +536,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 35.813rem;
+    max-width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
     list-style: none;
     gap: 2rem;
   }
@@ -428,47 +545,22 @@ nav {
   .features-item {
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 1.375rem;
   }
 
   .features-item div {
+    min-width: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
-  /* IKI 768px | HOME Tablet testimionals */
-
-  .testimonials-section {
-    width: 48rem;
-    height: 74.938rem;
-  }
-
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    width: 35.813rem;
-  }
-
-  .testimonials-title {
-    width: 35.813rem;
-    text-align: center;
-    font-size: 2rem;
-    font-style: normal;
-    line-height: 2rem;
-  }
-
-  .h3 {
-    width: 21.875rem;
-    height: auto;
-  }
-
-  .h3 small {
-    width: 21.875rem;
-    height: auto;
-  }
-
-  .avatar {
-    margin-bottom: 1rem;
+   
+  .features-list .features-item img {
+    width: 4.5rem;
+    height: 4.5rem;
+    flex-shrink: 0;
+    object-fit: contain;
   }
 }
