@@ -192,7 +192,7 @@ header {
   width: 1.5rem;
   height: 1.218rem;
 
-  border-color: transparent;
+  border: 0rem;
   border-radius: 0%;
 
   margin: 0rem;
@@ -209,7 +209,7 @@ header {
 }
 
 .d_grid2 button {
-  top: 1.86rem;
+  top: 1.75rem;
   background-color: var(--sec-rapture-blue);
 }
 
@@ -434,7 +434,7 @@ header {
 
 .d_grid button {
     bottom: 0.15rem;
-    left: 7.5rem;
+    left: 7.1rem;
 }
 
 .d_grid button img {
@@ -460,8 +460,7 @@ header {
 }
 
 .d_grid2 .body-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin: 0.5rem 1.437rem 1.5rem 1.437rem;
     height: 4.687rem;
     text-align: center;
 }
@@ -542,3 +541,5 @@ d_grid {
     top: -25.5rem;
   }
 }
+
+
