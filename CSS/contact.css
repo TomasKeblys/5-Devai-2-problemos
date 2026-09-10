@@ -17,6 +17,9 @@
     font-size: 32px;
   }
 }
+nav {
+  padding-top: 4.6rem;
+}
 
 #container .second-circle {
   position: absolute;
@@ -229,4 +232,7 @@
   #container main section > form {
     width: auto;
   }
+ nav {
+  padding-top: 5.5rem;
+} 
 }
