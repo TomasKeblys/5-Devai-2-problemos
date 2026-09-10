@@ -241,6 +241,9 @@ nav ul ul li {
     height: 1.5rem;
     display: flex;
     justify-content: space-between;
+  } & img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 var(--pri-light-coral))
+      saturate(1000%);
   }
 
   & p {
