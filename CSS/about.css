@@ -31,14 +31,21 @@ header {
 }
 
 .red_dash {
+    width: 3.125rem;
+    height: 0.25rem;
+    border: none;
   border: 2px solid var(--pri-light-coral);
-  width: 3.5rem;
+  /* width: 3.5rem; */
   margin-bottom: 1rem;
+  position: relative;
+  top: -1.25rem;
 }
 
 .a_h1 {
   flex-grow: 2;
   align-self: flex-start;
+  margin-top: 1.25rem;
+  padding-left: 0.313rem;
 }
 
 .a_h1 .h1-small {
@@ -49,11 +56,13 @@ header {
   width: 45.625rem;
   height: 9.75rem;
   flex-grow: 3;
+  padding-left: 3.75rem;
+  margin-top: 1.25rem;
 }
 
 .a_p p {
   text-align: start;
-  margin-right: 6rem;
+  /* margin-right: 6rem; */
 }
 
 .a_decor1 {
@@ -173,6 +182,7 @@ header {
   left: 70.6rem;
 }
 
+
 /*==============flip directors================*/
 
 .d_grid2 .body-1 {
@@ -235,6 +245,17 @@ header {
   bottom: 34.6rem;
 }
 
+.d_grid > div:nth-child(n + 4) {
+  position: relative;
+  top: 1.625rem;
+}
+
+.d_grid2 > div:nth-child(n + 4) {
+  position: relative;
+  top: 1.625rem;
+}
+
+
 .flipped {
   z-index: 0;
 }
@@ -242,6 +263,7 @@ header {
 .not_flipped {
   z-index: 1;
 }
+
 
 /*===========================OUR CLIENTS=============================*/
 
@@ -337,154 +359,163 @@ header {
 /*=========tablet=========*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  #container {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    #container{
-        width: 100%;
-        margin: 0 auto;
-    }
+  header {
+    height: 34.75rem;
+    width: 100%;
+  }
 
-    header {
-        height: 34.75rem;
-        width: 100%;
-    }
+  .about {
+    display: block;
+    width: 42.687rem;
+    height: 13.75rem;
+    margin: 8.25rem auto 7rem auto;
+  }
 
-    .about{
-        display: block;
-        width: 42.687rem;
-        height: 13.75rem;
-        margin: 8.25rem auto 7rem auto;
-    }
+  .red_dash {
+    display: none;
+  }
 
-    .red_dash {
-        display: none;
-    }
+  .a_h1 {
+    height: 3.5rem;
+  }
 
-    .a_h1{
-        height: 3.5rem;
-    }
+  .a_h1 h1 {
+    margin: 0rem;
+  }
 
-    .a_h1 h1{
-        margin: 0rem;
-    }
+  .a_p {
+    height: 8.75rem;
+    width: 28.562rem;
+    transform: translateX(-3.75rem);
+  }
+  .a_p p {
+    width: 28.625rem;
+    font-size: 0.937rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: calc(2rem + -2px);
+    box-sizing: border-box;
+    line-height: 1.75rem;
+  }
 
-    .a_p{
-        height: 8.75rem;
-        width: 28.562rem;
-        
-    }
-    .a_p p {
-        font-size: 0.937rem;
-        text-align: center;
-        margin: 0rem;      
-        margin-top: 1.5rem;  
-    }
+  .a_decor1 {
+    position: absolute;
+    z-index: 10;
+    left: 86.6%;
+    top: 22.2rem;
+  }
 
-    .a_decor1 {
-        position: absolute;
-        z-index: 10;
-        left: 86.6%;
-        top: 22.2rem;
-    }
-  
+  /*================director tablet=====================*/
 
-/*================director tablet=====================*/
-
-.directors{
+  .directors {
     height: 76.187rem;
     padding: 6.25rem 6.062rem;
     padding-top: 5.6rem;
     margin: 0rem auto;
     justify-items: center;
-}
+  }
 
-.directors .d_grid {
+  .directors .d_grid {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     row-gap: 4.75rem;
     column-gap: 0.687rem;
-}
+  }
 
-.directors .h2{
+  .directors .h2 {
     height: 2rem;
     margin-top: 0rem;
     margin-bottom: 3.624rem;
-}
+  }
 
-.directors h2{
+  .directors h2 {
     font-size: 2rem;
-}
+  }
 
-.d_grid div{
+  .d_grid div {
     width: 17.562rem;
     height: 15.812rem;
-}
+  }
 
-.d_grid .d_job {
+  .d_grid .d_job {
     height: 1.56rem;
 
     margin-bottom: 1.75rem;
-}
+  }
 
-.directors img {
+  .directors img {
     height: 6rem;
-}
+  }
 
-.d_grid div img {
+  .d_grid div img {
     margin-left: 5.781rem;
     margin-top: 2rem;
-}
+  }
 
-.d_grid button {
+  .d_grid button {
     bottom: 0.15rem;
     left: 7.1rem;
-}
+  }
 
-.d_grid button img {
+  .d_grid button img {
     margin: 1.187rem 0.875rem;
-}
+  }
 
-/*============flip==================*/
+  /*============flip==================*/
 
-.d_grid2 span {
+  .d_grid2 span {
     margin: 0rem 6.906rem 2.187rem 6.906rem;
-}
+  }
 
-.d_grid2 button {
+  .d_grid2 button {
     top: 2.05rem;
-}
+  }
 
-.d_grid2 {
+  .d_grid2 {
     bottom: 56.934rem;
-}
+  }
 
-.d_grid2 .body-1 {
+  .d_grid2 .body-1 {
     margin-top: 2.187rem;
-}
+  }
 
-.d_grid2 .body-2 {
+  .d_grid2 .body-2 {
     margin: 0.5rem 1.437rem 1.5rem 1.437rem;
     height: 4.687rem;
     text-align: center;
-}
+  }
+  .d_grid > div,
+  .d_grid2 > div,
+  .d_grid > div:nth-child(n + 3),
+  .d_grid2 > div:nth-child(n + 3) {
+    position: static;
+    top: 0;
+  }
 
-.directors .d_decor1 {
+  .directors .d_decor1 {
     bottom: 125.24rem;
     right: 67.4%;
-}
+  }
 
-.directors .d_decor2 {
+  .directors .d_decor2 {
     bottom: 67.68rem;
     left: 92%;
-}
+  }
 
-.d_grid2 .griffin button{
+  .d_grid2 .griffin button {
     top: 2rem;
-}
+  }
 
-.d_grid2 .aden button{
+  .d_grid2 .aden button {
     top: 2rem;
-}
-
+  }
 }
 
 /*===========================media-tablets===========================*/
@@ -544,7 +575,7 @@ header {
 /*=================tablet nav tweaks======================*/
 
 @media (max-width: 1439px) {
-header nav,
+  header nav,
   .nav {
     position: static;
     width: 100%;
@@ -568,7 +599,6 @@ header nav,
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
   }
 
   .nav-container {
@@ -684,9 +714,9 @@ header nav,
   .nav-text hr {
     display: none;
   }
-  li.nav-logo{
-  margin-top: 0rem;
-}
+  li.nav-logo {
+    margin-top: 0rem;
+  }
 }
 
 /*===============desktop nav=======================*/
@@ -697,7 +727,7 @@ nav {
   margin: 0rem auto;
 }
 
-.nav-logo{
+.nav-logo {
   margin-top: 0.55rem;
 }
 
