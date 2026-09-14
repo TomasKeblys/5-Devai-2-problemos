@@ -243,6 +243,10 @@ nav {
   text-align: center;
 }
 
+.testimonials-title .shift-right {
+  color: inherit;
+}
+
 .testimonials-title span {
   color: var(--sec-rapture-blue);
 }
@@ -300,6 +304,11 @@ nav {
   color: var(--sec-rapture-blue);
 }
 
+.testimonial-card figcaption small {
+  display: block;
+  margin-top: 2px;
+}
+
 .testimonial-card small {
   display: block;
   font-size: 0.813rem;
@@ -319,7 +328,7 @@ nav {
   object-fit: cover;
   display: block;
   margin: 0;
-  transform: translateY(3px);
+  /* transform: translateY(11px); */
 }
 
 .avatar-arthur {
@@ -329,7 +338,6 @@ nav {
 /* Tarp 1024px ir 1440px */
 
 @media (min-width: 48.01rem) and (max-width: 90rem) {
-
   .header,
   .features-section {
     padding-left: 2rem;
@@ -369,7 +377,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-
   }
 
   .nav-container {
@@ -594,6 +601,11 @@ nav {
     margin: 0 auto 0.75rem;
   }
 
+  .testimonials-title .shift-right {
+    display: inline-block;
+    margin-left: -8px;
+  }
+
   .testimonials-title span {
     display: block;
     color: #79c8c7;
@@ -637,6 +649,10 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+  .testimonial-card figcaption small {
+    display: block;
+    transform: translateY(-3px);
+  }
 
   .testimonial-card h3 {
     margin: 0 0 0.125rem 0;
@@ -653,12 +669,21 @@ nav {
 
   .testimonial-card .avatar {
     display: block;
-    transform: translateY(2px);
+    transform: translateY(-2px);
     width: 3.875rem;
     height: 3.875rem;
     border-radius: 50%;
   }
   .testimonial-card:last-child .avatar {
-    transform: translateY(-14px);
+    transform: translateY(-18px);
+  }
+
+  .testimonial-card:last-child figcaption h3 {
+    display: inline-block;
+    transform: translateY(-4px);
+  }
+
+  .testimonial-card:last-child blockquote p {
+    transform: translateY(-4px);
   }
 }

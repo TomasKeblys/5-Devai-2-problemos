@@ -205,7 +205,7 @@ nav ul ul li {
     align-content: end;
     width: 8.75rem;
     height: 1.75rem;
-    padding-top: 0.5rem;
+    padding-top: 0.7rem;
 
     & li:first-child {
       margin-right: 2.3rem;
@@ -213,15 +213,34 @@ nav ul ul li {
   }
 }
 
+#footer div .logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+#footer div .logo ul {
+  margin-top: 2rem;
+}
+
+#footer ul.body-1 li:last-child a {
+  display: inline-block;
+  transform: translateX(-2px);
+}
+
 #footer div address {
   height: 6.25rem;
   margin: 0rem;
   margin-left: 7.813rem;
+  opacity: 0.6;
 
   & ul {
     padding: 0rem;
     margin: 0rem;
   }
+}
+.shift-left {
+  display: inline-block;
+  margin-left: 3px;
 }
 
 #footer .social {
@@ -250,8 +269,16 @@ nav ul ul li {
     margin: 0rem;
     align-content: end;
   }
+  #footer div .logo {
+  display: flex;
+  align-items: flex-start;
 }
 
+
+}
+#footer .logo ul {
+  transform: translateY(-16px);
+}
 /*--------------------ready to get started--------------------*/
 
 #ready-to-get-started {
@@ -283,7 +310,7 @@ nav ul ul li {
 }
 #ready-to-get-started div {
   justify-self: center;
-  padding-left: 0.188em;
+  /* padding-left: 0.188em; */
   width: 57.313rem;
   display: flex;
   justify-content: space-between;
@@ -410,6 +437,17 @@ nav ul ul li {
     font-size: 15px;
     line-height: 25px;
   }
+  #footer div .logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+#footer div .logo ul {
+  margin-top: 2rem;
+}
+#footer .logo ul {
+  transform: translateY(0px);
+}
 
   #ready-to-get-started {
     display: flex;
