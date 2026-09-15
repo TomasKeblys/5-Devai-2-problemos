@@ -603,8 +603,10 @@ nav {
 
   .testimonials-title .shift-right {
     display: inline-block;
-    margin-left: -8px;
+    transform: translateX(-4px)
   }
+
+
 
   .testimonials-title span {
     display: block;
